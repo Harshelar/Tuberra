@@ -16,7 +16,7 @@ const FloatingGlassCard = ({ delay, yOffset, xOffset, title, value, subtitle }) 
     }}
     className={`absolute ${xOffset} hidden md:block glass-card p-6 rounded-2xl border-t border-l border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.5)] z-20 w-[200px]`}
   >
-    <div className="text-[#3a8dde] text-sm uppercase tracking-widest font-bold mb-1">{title}</div>
+    <div className="text-[#7ec8ff] text-sm uppercase tracking-widest font-bold mb-1 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]">{title}</div>
     <div className="text-4xl font-bebas text-white mb-1 shadow-black drop-shadow-md">{value}</div>
     <div className="text-xs text-silver leading-relaxed">{subtitle}</div>
   </motion.div>
@@ -110,28 +110,37 @@ const Hero = () => {
           <FloatingGlassCard 
             delay={0.8}
             yOffset={-15}
-            xOffset="top-[15%] right-[10%]"
+            xOffset="top-[15%] right-[15%]"
             title="Projects"
             value="500+"
-            subtitle="Successfully delivered worldwide across 40 counties."
+            subtitle="Project shipments completed successfully."
+          />
+
+          <FloatingGlassCard 
+            delay={1.0}
+            yOffset={15}
+            xOffset="top-[15%] left-[15%]"
+            title="Global Reach"
+            value="20+"
+            subtitle="Countries exported to worldwide."
           />
 
           <FloatingGlassCard 
             delay={1.2}
             yOffset={20}
-            xOffset="bottom-[25%] left-[0%]"
-            title="Quality Standard"
-            value="ISO 9001"
-            subtitle="Certified manufacturing & rigorous testing systems."
+            xOffset="bottom-[20%] left-[15%]"
+            title="Clients"
+            value="200+"
+            subtitle="Happy and satisfied clients globally."
           />
 
           <FloatingGlassCard 
-            delay={1.6}
-            yOffset={-25}
-            xOffset="bottom-[10%] right-[20%]"
-            title="Legacy"
-            value="25 Yrs"
-            subtitle="Decades of metallurgical perfection and expertise."
+            delay={1.4}
+            yOffset={-20}
+            xOffset="bottom-[20%] right-[15%]"
+            title="Experience"
+            value="50+ Yrs"
+            subtitle="Years of metallurgical expertise."
           />
 
         </div>
