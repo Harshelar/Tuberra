@@ -52,14 +52,14 @@ const Hero = () => {
             className="inline-flex glass-panel px-5 py-2 rounded-full mb-8 items-center gap-3 border-l-[#3a8dde] border-l-2"
           >
             <span className="w-2 h-2 rounded-full bg-[#3a8dde] animate-pulse"></span>
-            <span className="text-[0.75rem] tracking-[0.25em] uppercase font-bold text-silver">Global Steel Exporter</span>
+            <span className="text-[0.75rem] tracking-[0.25em] uppercase font-bold text-[#1456a8]">Global Steel Exporter</span>
           </motion.div>
           
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="font-bebas text-[clamp(4rem,8vw,8rem)] leading-[0.85] tracking-[0.02em] text-white mb-6 drop-shadow-2xl"
+            className="font-bebas text-[clamp(4rem,8vw,8rem)] leading-[0.85] tracking-[0.02em] text-[#1456a8] mb-6 drop-shadow-xl"
           >
             Unbreakable <br/>
             <span className="clip-text-gradient bg-clip-text text-transparent bg-gradient-to-r from-[#3a8dde] via-[#7ec8ff] to-[#3a8dde] animate-[gradientShift_4s_ease-in-out_infinite]">Precision</span>

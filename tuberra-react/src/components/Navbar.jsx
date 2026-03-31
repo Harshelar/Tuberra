@@ -24,11 +24,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 lg:px-10 h-[75px] transition-all duration-500 ${
-          isScrolled 
-            ? "bg-[#060a16]/60 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.3)]" 
-            : "bg-transparent border-b border-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 lg:px-10 h-[75px] transition-all duration-500 bg-[#060a16]/40 backdrop-blur-2xl border-b border-white/20 shadow-[0_4px_30px_rgba(0,0,0,0.1)]`}
       >
         {/* Logo */}
         <a href="#" className="flex items-center gap-3.5 no-underline">
