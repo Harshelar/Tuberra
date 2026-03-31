@@ -4,10 +4,24 @@
 
 html {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  @apply bg-navy text-text font-rajdhani overflow-x-hidden;
+  @apply bg-[#030610] text-gray-300 font-rajdhani overflow-x-hidden;
+}
+
+/* Hardware acceleration for generic high-performance layers */
+.gpu-accel {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 @layer utilities {
@@ -20,6 +34,8 @@ body {
   
   .glass-panel {
     @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)];
+    transform: translateZ(0);
+    will-change: transform;
   }
 
   .glass-panel-hover {
@@ -31,20 +47,23 @@ body {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.08);
+    transform: translateZ(0);
+    will-change: transform;
   }
 }
 
 @keyframes pulse-glow {
   0%, 100% {
-    opacity: 0.5;
-    transform: scale(1);
+    opacity: 0.3;
+    transform: scale(1) translateZ(0);
   }
   50% {
-    opacity: 0.8;
-    transform: scale(1.05);
+    opacity: 0.6;
+    transform: scale(1.05) translateZ(0);
   }
 }
 
 .animate-glow {
   animation: pulse-glow 8s ease-in-out infinite;
+  will-change: auto; /* Avoid permanently keeping in VRAM if not needed, but pulse uses it */
 }

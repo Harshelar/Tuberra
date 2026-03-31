@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Flame, Droplet, Zap, Focus, Factory, Cpu } from 'lucide-react';
+import { GlowCard } from '../components/ui/spotlight-card';
 
 const industriesData = [
   { id: 1, title: 'Oil & Gas', icon: <Flame size={32} strokeWidth={1.5} />, desc: 'High-pressure capabilities for harsh extraction.' },
@@ -23,7 +24,7 @@ const Industries = () => {
       </div>
 
       <div className="max-w-[1400px] mx-auto relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -32,7 +33,7 @@ const Industries = () => {
         >
           <div className="text-[0.75rem] tracking-[0.3em] uppercase font-bold text-[#3a8dde] mb-3">Sectors We Serve</div>
           <h2 className="font-bebas text-[clamp(2.5rem,4vw,3.8rem)] tracking-[0.05em] text-white leading-[1.05] mb-6">
-            Powering Global <span className="clip-text-gradient bg-clip-text text-transparent bg-gradient-to-r from-[#3a8dde] to-[#1456a8]">Industries</span>
+            Powering Global <span className="clip-text-gradient bg-clip-text text-transparent bg-gradient-to-r from-[#3a8dde] to-[#1456a8]">Industries</span>   
           </h2>
           <div className="w-[60px] h-[3px] rounded-full bg-gradient-to-r from-[#1456a8] to-[#3a8dde] mx-auto shadow-[0_0_10px_rgba(58,141,222,0.8)]" />
         </motion.div>
@@ -45,18 +46,20 @@ const Industries = () => {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1, type: "spring", stiffness: 100 }}
-              className="glass-panel glass-panel-hover p-8 rounded-2xl group relative overflow-hidden"
+              className="h-full cursor-pointer"
             >
-              {/* Animated hover gradient bubble */}
-              <div className="absolute -inset-[100%] bg-gradient-to-r from-transparent via-[#3a8dde]/10 to-transparent transition-transform duration-1000 -translate-x-full group-hover:translate-x-full"></div>
+              <GlowCard customSize={true} className="w-full h-full p-8 group z-10 glass-panel glass-panel-hover">
+                {/* Animated hover gradient bubble */}
+                <div className="absolute -inset-[100%] bg-gradient-to-r from-transparent via-[#3a8dde]/10 to-transparent transition-transform duration-1000 -translate-x-full group-hover:translate-x-full z-0"></div>
 
-              <div className="w-16 h-16 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#3a8dde] mb-6 group-hover:bg-[#3a8dde] group-hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(58,141,222,0.2)] group-hover:shadow-[0_0_25px_rgba(58,141,222,0.6)] group-hover:scale-110">
-                {ind.icon}
-              </div>
-              <h3 className="font-rajdhani text-[1.4rem] font-bold text-white mb-3 tracking-wide">{ind.title}</h3>
-              <p className="text-silver text-[0.95rem] leading-relaxed">
-                {ind.desc}
-              </p>
+                <div className="w-16 h-16 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#3a8dde] mb-6 group-hover:bg-[#3a8dde] group-hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(58,141,222,0.2)] group-hover:shadow-[0_0_25px_rgba(58,141,222,0.6)] group-hover:scale-110 relative z-10">
+                  {ind.icon}
+                </div>
+                <h3 className="font-rajdhani text-[1.4rem] font-bold text-white mb-3 tracking-wide relative z-10">{ind.title}</h3>
+                <p className="text-silver text-[0.95rem] leading-relaxed relative z-10">        
+                  {ind.desc}
+                </p>
+              </GlowCard>
             </motion.div>
           ))}
         </div>
@@ -64,5 +67,4 @@ const Industries = () => {
     </section>
   );
 };
-
 export default Industries;

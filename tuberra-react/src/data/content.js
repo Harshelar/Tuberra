@@ -118,9 +118,15 @@ export const industriesData = [
   { title: "Marine", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80" }
 ];
 export const specsData = [
-  { title: 'Stainless Steel', grades: 'ASTM A312 / A213 / A269 / A249 / A358 / A106 / A53 / API 5L. Grades: 304, 304L, 316, 316L, 316Ti, 317, 317L, 321, 347, 347H, 904L' },
-  { title: 'Carbon & Alloy', grades: 'Carbon: A106 Gr. B / C, A53 Gr. B. Alloy: A335 P1, P5, P9, P11, P12, P22, P91. Low LTCS: A333 Gr.3/Gr.6' },
-  { title: 'Nickel Alloys', grades: 'Inconel 600, 601, 625, 718. Incoloy 800, 800H, 825. Monel 400, K500. Hastelloy C276, C22. Nickel 200, 201' },
-  { title: 'Duplex Alloys', grades: 'Duplex UNS S31803 / S32205. Super Duplex UNS S32750 / S32760 / S32950. Titanium Gr 2, Gr 5, Cupro Nickel 90/10, 70/30' }
+  { title: 'Stainless Steel', grades: 'ASTM A182, A240, A312, A358, A403, A213, A249, A269, A479, A276, 202, 304, 304L, 304H, 316, 316L, 316H, 316Ti, 309, 310, 317, 347, 904L' },
+  { title: 'Duplex & Super Duplex', grades: 'ASTM A815, A182, A790, UNS31803, UNS32205, UNS32760, UNS32750' },
+  { title: 'Cupro Nickel', grades: 'C70600 (90:10), C71500 (70:30), C71640' },
+  { title: 'Nickel & Monel', grades: 'UNS N02200, N02201, N04400, N05500' },
+  { title: 'INCONEL', grades: 'UNS N06600, N06601, N06625, N08810, N08825, N08031' },
+  { title: 'HASTELLOY', grades: 'UNS N10276, N06022, N10665' },
+  { title: 'Titanium', grades: 'Titanium Grade 1/2/3, DIN-3.7025, DIN-3.7035, DIN-3.7055' },
+  { title: 'Alloy Steel', grades: 'ASTM A182/ SA234 GR-1, GR-5, GR-9, GR-11, GR-12, GR-22, GR-91' },
+  { title: 'Carbon Steel', grades: 'ASTM A105, A106 GRADE A/B/C, SA234 WPB' },
+  { title: 'LTCS', grades: 'ASTM A333 GRADE 3/6/9, A350 LF2, A420 WP 6, A5 GRADE 60/70' }
 ];
 

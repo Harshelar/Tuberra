@@ -24,14 +24,14 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 lg:px-10 h-[75px] transition-all duration-500 bg-[#060a16]/40 backdrop-blur-2xl border-b border-white/20 shadow-[0_4px_30px_rgba(0,0,0,0.1)]`}
+        className={`fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-[1100px] z-50 flex items-center justify-between px-6 lg:px-8 h-[55px] transition-all duration-500 bg-white/90 backdrop-blur-2xl border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.1)] rounded-full`}
       >
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3.5 no-underline">
-          <img src="/logo.png" alt="Tuberra Logo" className="h-11 w-auto object-contain" />
-          <div>
-            <div className="font-bebas text-2xl tracking-[0.12em] text-white leading-tight">Tuberra</div>
-            <div className="text-[0.62rem] tracking-[0.22em] text-accent font-rajdhani font-semibold uppercase">Steel Company</div>
+        <a href="#" className="flex items-center gap-3 no-underline">
+          <img src="/logo.png" alt="Tuberra Logo" className="h-8 w-auto object-contain" />
+          <div className="flex flex-col justify-center">
+            <div className="font-bebas text-[1.4rem] tracking-[0.15em] text-[#0f172a] leading-none mb-1">TUBERRA</div>
+            <div className="text-[0.6rem] tracking-[0.25em] text-[#1456a8] font-rajdhani font-bold uppercase leading-none pl-[0.1em]">STEEL COMPANY</div>
           </div>
         </a>
 
@@ -43,9 +43,9 @@ const Navbar = () => {
             onMouseEnter={() => setIsDropdownHovered(true)}
             onMouseLeave={() => setIsDropdownHovered(false)}
           >
-            <a href="#products" className="flex items-center gap-1 relative px-4 py-2 text-silver text-base font-semibold tracking-wide uppercase transition-colors hover:text-white group">
+            <a href="#products" className="flex items-center gap-1 relative px-3 py-1 text-gray-700 text-[0.85rem] font-semibold tracking-wide uppercase transition-colors hover:text-[#1456a8] group">
               Products <ChevronDown size={14} />
-              <span className="absolute left-4 right-4 bottom-1 h-[1.5px] bg-accent scale-x-0 origin-center transition-transform duration-250 ease-out group-hover:scale-x-100" />
+              <span className="absolute left-3 right-3 bottom-0 h-[1.5px] bg-[#1456a8] scale-x-0 origin-center transition-transform duration-250 ease-out group-hover:scale-x-100" />
             </a>
             
             <AnimatePresence>
@@ -55,13 +55,13 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-[calc(100%+8px)] left-0 bg-[#0a0f1ef8] border border-[#1456a84c] rounded-md min-w-[240px] py-2 shadow-[0_20px_60px_rgba(0,0,0,0.6)]"
+                  className="absolute top-[calc(100%+4px)] left-0 bg-white/95 backdrop-blur-xl border border-gray-200 rounded-md min-w-[200px] py-1.5 shadow-[0_20px_60px_rgba(0,0,0,0.1)]"
                 >
                   {productsList.map((item) => (
                     <a 
                       key={item} 
                       href="#products" 
-                      className="block px-5 py-2.5 text-sm tracking-wide text-silver hover:bg-[#1456a833] hover:text-white transition-colors"
+                      className="block px-4 py-2 text-[0.8rem] tracking-wide text-gray-700 hover:bg-gray-100 hover:text-[#1456a8] transition-colors"
                     >
                       {item}
                     </a>
@@ -71,25 +71,25 @@ const Navbar = () => {
             </AnimatePresence>
           </div>
 
-          <a href="#about" className="relative px-4 py-2 text-silver text-base font-semibold tracking-wide uppercase transition-colors hover:text-white group">
+          <a href="#about" className="relative px-3 py-1 text-gray-700 text-[0.85rem] font-semibold tracking-wide uppercase transition-colors hover:text-[#1456a8] group">
             About Us
-            <span className="absolute left-4 right-4 bottom-1 h-[1.5px] bg-accent scale-x-0 origin-center transition-transform duration-250 ease-out group-hover:scale-x-100" />
+            <span className="absolute left-3 right-3 bottom-0 h-[1.5px] bg-[#1456a8] scale-x-0 origin-center transition-transform duration-250 ease-out group-hover:scale-x-100" />
           </a>
-          <a href="#contact" className="relative px-4 py-2 text-silver text-base font-semibold tracking-wide uppercase transition-colors hover:text-white group">
+          <a href="#contact" className="relative px-3 py-1 text-gray-700 text-[0.85rem] font-semibold tracking-wide uppercase transition-colors hover:text-[#1456a8] group">
             Contact
-            <span className="absolute left-4 right-4 bottom-1 h-[1.5px] bg-accent scale-x-0 origin-center transition-transform duration-250 ease-out group-hover:scale-x-100" />
+            <span className="absolute left-3 right-3 bottom-0 h-[1.5px] bg-[#1456a8] scale-x-0 origin-center transition-transform duration-250 ease-out group-hover:scale-x-100" />
           </a>
           
           <button 
             onClick={() => setIsSearchOpen(true)}
-            className="bg-transparent border-none cursor-pointer text-silver p-2 transition-colors hover:text-accent ml-2"
+            className="bg-transparent border-none cursor-pointer text-gray-700 p-1 transition-colors hover:text-[#1456a8] ml-2"
           >
-            <Search size={20} />
+            <Search size={18} />
           </button>
           
           <button 
             onClick={() => document.getElementById('contact').scrollIntoView({behavior:'smooth'})}
-            className="ml-2 bg-gradient-to-br from-[#1456a8] to-[#3a8dde] text-white border-none cursor-pointer px-5 py-2.5 rounded-sm font-rajdhani text-sm font-bold tracking-widest uppercase transition-all duration-200 hover:opacity-90 hover:-translate-y-px"
+            className="ml-2 bg-gradient-to-br from-[#1456a8] to-[#3a8dde] text-white border-none cursor-pointer px-4 py-2 rounded-full font-rajdhani text-[0.8rem] font-bold tracking-widest uppercase transition-all duration-200 hover:shadow-[0_0_15px_rgba(58,141,222,0.4)] hover:-translate-y-px"
           >
             Get Quote
           </button>

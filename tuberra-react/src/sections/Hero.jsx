@@ -24,21 +24,21 @@ const FloatingGlassCard = ({ delay, yOffset, xOffset, title, value, subtitle }) 
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[70px] bg-[#030610]">
-      {/* Dynamic Glowing Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-[40vw] h-[40vw] bg-[#1456a8] rounded-full mix-blend-screen filter blur-[100px] opacity-30 animate-glow z-0"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-[35vw] h-[35vw] bg-[#3a8dde] rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-glow z-0" style={{ animationDelay: '2s' }}></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] bg-[#0c2242] rounded-full mix-blend-screen filter blur-[150px] opacity-40 z-0"></div>
+    <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden pt-[70px] bg-[#030610]">
+      {/* Dynamic Glowing Orbs with GPU acceleration */}
+      <div className="absolute top-1/4 left-1/4 w-[40vw] h-[40vw] bg-[#1456a8] rounded-full mix-blend-screen filter blur-[100px] opacity-30 animate-glow z-0 gpu-accel pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-[35vw] h-[35vw] bg-[#3a8dde] rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-glow z-0 gpu-accel pointer-events-none" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] bg-[#0c2242] rounded-full mix-blend-screen filter blur-[150px] opacity-40 z-0 gpu-accel pointer-events-none"></div>
 
       {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(58,141,222,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(58,141,222,0.05)_1px,transparent_1px)] bg-[size:40px_40px] animate-[gridShift_20s_linear_infinite] z-0 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,black_10%,transparent_80%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(58,141,222,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(58,141,222,0.05)_1px,transparent_1px)] bg-[size:40px_40px] animate-[gridShift_20s_linear_infinite] z-0 [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,black_10%,transparent_80%)] gpu-accel pointer-events-none" />
       
       {/* 3D Model / Image with gradient cut-off */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80')] bg-center bg-cover bg-no-repeat opacity-[0.15] mix-blend-luminosity" 
+        className="absolute inset-0 z-0 bg-[url('/hero-bg.jpg')] bg-center bg-cover bg-no-repeat opacity-[0.15] mix-blend-luminosity" 
       />
 
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-10 items-center">
@@ -61,8 +61,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="font-bebas text-[clamp(4rem,8vw,8rem)] leading-[0.85] tracking-[0.02em] text-[#1456a8] mb-6 drop-shadow-xl"
           >
-            Unbreakable <br/>
-            <span className="clip-text-gradient bg-clip-text text-transparent bg-gradient-to-r from-[#3a8dde] via-[#7ec8ff] to-[#3a8dde] animate-[gradientShift_4s_ease-in-out_infinite]">Precision</span>
+            Supply.<br/>
+            <span className="clip-text-gradient bg-clip-text text-transparent bg-gradient-to-r from-[#3a8dde] via-[#7ec8ff] to-[#3a8dde] animate-[gradientShift_4s_ease-in-out_infinite]">Simplified.</span>
           </motion.h1>
           
           <motion.p 

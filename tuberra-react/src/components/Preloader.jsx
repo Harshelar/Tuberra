@@ -5,8 +5,8 @@ const Preloader = () => {
   return (
     <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#030610] overflow-hidden">
       {/* Background Orbs to match theme */}
-      <div className="absolute top-1/4 left-1/4 w-[40vw] h-[40vw] bg-[#1456a8] rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-glow z-0"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-[35vw] h-[35vw] bg-[#3a8dde] rounded-full mix-blend-screen filter blur-[150px] opacity-10 z-0"></div>
+      <div className="absolute top-1/4 left-1/4 w-[40vw] h-[40vw] bg-[#1456a8] rounded-full mix-blend-screen filter blur-[120px] opacity-20 animate-glow z-0 gpu-accel pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-[35vw] h-[35vw] bg-[#3a8dde] rounded-full mix-blend-screen filter blur-[150px] opacity-10 z-0 gpu-accel pointer-events-none"></div>
 
       <div className="relative z-10 flex flex-col items-center" style={{ perspective: 1000 }}>
         <motion.div
