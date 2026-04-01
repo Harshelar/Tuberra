@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X, ChevronDown } from 'lucide-react';
+import { Search, X, ChevronDown, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const productsList = [
@@ -94,6 +94,15 @@ const Navbar = () => {
           >
             Get Quote
           </button>
+
+          <a
+            href="/product-catalogue.pdf"
+            download="Tuberra_Product_Catalogue.pdf"
+            className="ml-2 flex items-center justify-center gap-2 bg-gradient-to-br from-[#1456a8] to-[#3a8dde] text-white border-none cursor-pointer px-4 py-2 rounded-full font-rajdhani text-[0.8rem] font-bold tracking-widest uppercase transition-all duration-200 hover:shadow-[0_0_15px_rgba(58,141,222,0.4)] hover:-translate-y-px no-underline"
+          >
+            <Download size={14} />
+            <span>Catalogue</span>
+          </a>
         </div>
       </nav>
 

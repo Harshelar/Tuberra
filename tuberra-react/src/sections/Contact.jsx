@@ -79,6 +79,21 @@ const Contact = () => {
               </div>
             ))}
           </div>
+
+          {/* Map Section */}
+          <div className="mt-8 w-full h-[180px] rounded-xl p-1.5 bg-[#10182cb2] border border-[#1456a840] shadow-[0_8px_30px_rgba(20,86,168,0.1)] group transition-all duration-300 hover:border-[#1456a880]">
+            <div className="w-full h-full rounded-lg overflow-hidden relative">
+              <iframe
+                src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Somji%20Building,%20S.V.P.%20Road,%20Near%20Gol%20Deval%20Temple,%20Mumbai,%20Maharashtra+(Tuberra%20Steel)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+                className="w-full h-full opacity-90 transition-opacity duration-300 group-hover:opacity-100"
+                style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(85%) contrast(150%)' }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Office Location Map"
+              ></iframe>
+            </div>
+          </div>
         </motion.div>
 
         {/* Contact Form */}
