@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { productsData } from '../data/content';
 import { GlowCard } from '../components/ui/spotlight-card';
 
 const Products = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="products" className="py-24 px-6 lg:px-20 relative bg-[#060a16]">
       {/* Background glow effects */}
@@ -47,6 +50,7 @@ const Products = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.05, ease: "easeOut" }}
               className="h-full"
+              onClick={() => product.link && navigate(product.link)}
             >
               <GlowCard customSize={true} className="w-full h-full overflow-hidden relative group !p-0 z-10 glass-panel glass-panel-hover rounded-xl cursor-pointer block hover:border-[#3a8dde]/50 transition-all duration-300">
                 <div className="h-[220px] overflow-hidden relative rounded-t-xl">

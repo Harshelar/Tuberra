@@ -4,73 +4,85 @@ export const productsData = [
     title: "Pipes & Tubes",
     desc: "Seamless, Welded, ERW, EFW, LSAW, SSAW pipes in Stainless Steel, Carbon Steel, Alloy Steel and more. Sizes 1/8\" NB to 48\" NB.",
     img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    badge: "Featured"
+    badge: "Featured",
+    link: "/pipes-tubes"
   },
   {
     id: 2,
     title: "Buttweld Fittings",
     desc: "Elbows, Tees, Reducers, Caps, Crosses in all grades. Long Radius and Short Radius bends with precision engineering for high-pressure applications.",
-    img: "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=600&q=80",
+    link: "/buttweld-fittings"
   },
   {
     id: 3,
     title: "Flanges",
     desc: "Wide range of Industrial Flanges — Slip On, Weld Neck, Blind, Socket Weld, Lap Joint, Threaded — ideal for high pressure and temperature applications.",
-    img: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80",
+    link: "/flanges"
   },
   {
     id: 4,
     title: "Forged Fittings",
     desc: "High-grade raw material procured from best mills in India, using latest technology. Socket Weld and Threaded fittings for demanding industrial use.",
-    img: "https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1581092921461-7031e4bfb83e?w=600&q=80",
+    link: "/forged-fittings"
   },
   {
     id: 5,
     title: "Fasteners",
     desc: "A comprehensive range of bolts, nuts, screws, washers and rivets — precision, high-strength fasteners for durable, reliable industrial connections.",
-    img: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=600&q=80",
+    link: "/fasteners"
   },
   {
     id: 6,
     title: "Olets",
     desc: "Weldolet, Sockolet, Threadolet, Elbolet, Latrolet, Nipolet and more — branch pipe fitting connections for all pressure classes and pipe schedules.",
-    img: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80",
+    link: "/olets"
   },
   {
     id: 7,
-    title: "Gaskets",
-    desc: "Ring Type Joint, Spiral Wound, Sheet, Jacketed, Kamprofile gaskets engineered for sealing performance across high-temperature and pressure applications.",
-    img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80"
+    title: "Coating",
+    desc: "Industry-grade anti-corrosive coatings, including 3LPE, FBE, and more to enhance durability and pipeline lifecycle.",
+    img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80",
+    link: "/coating"
   },
   {
     id: 8,
     title: "Round Bar",
     desc: "High-quality stainless steel round bars in all grades and diameters. Reliable and durable solutions for construction, engineering and industrial use.",
-    img: "https://images.unsplash.com/photo-1589802829985-817e51171b92?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1589802829985-817e51171b92?w=600&q=80",
+    link: "/round-bar"
   },
   {
     id: 9,
     title: "Valves",
     desc: "Gate, Globe, Check, Ball, Butterfly, Needle and Plug valves — precision-engineered for flow control across oil & gas, chemical and process industries.",
-    img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80",
+    link: "/valves"
   },
   {
     id: 10,
     title: "Sheet, Plate & Coils",
     desc: "Stainless Steel, Carbon Steel, Aluminium, Nickel Alloy sheets and plates in various grades and dimensions for diverse industrial applications.",
-    img: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&q=80",
+    link: "/sheet-plate-coils"
   },
   {
     id: 11,
     title: "Ferrule Fittings",
     desc: "Single and double ferrule compression fittings in SS 316, SS 304, and other grades for precision fluid systems and instrumentation applications.",
-    img: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80",
+    link: "/ferrule-fittings"
   },
   {
     id: 12,
     title: "Spools",
     desc: "Prefabricated Pipe Spools engineered with precision for petrochemical, power, oil & gas, and industrial piping system installations worldwide.",
-    img: "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=600&q=80"
+    img: "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?w=600&q=80",
+    link: "/spools"
   }
 ];
 

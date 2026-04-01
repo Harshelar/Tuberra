@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Lenis from '@studio-freight/lenis';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
@@ -12,6 +14,33 @@ import Industries from './sections/Industries';
 import WhyUs from './sections/WhyUs';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
+
+// Pages
+import ButtweldFittings from './pages/ButtweldFittings';
+import Coating from './pages/Coating';
+import Fasteners from './pages/Fasteners';
+import FerruleFittings from './pages/FerruleFittings';
+import Flanges from './pages/Flanges';
+import ForgedFittings from './pages/ForgedFittings';
+import Olets from './pages/Olets';
+import PipesTubes from './pages/PipesTubes';
+import RoundBar from './pages/RoundBar';
+import SheetPlateCoils from './pages/SheetPlateCoils';
+import Spools from './pages/Spools';
+import Valves from './pages/Valves';
+
+const HomePage = () => (
+  <>
+    <Hero />
+    <Ticker />
+    <About />
+    <Specs />
+    <Products />
+    <Industries />
+    <WhyUs />
+    <Contact />
+  </>
+);
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -76,16 +105,25 @@ function App() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="bg-white min-h-screen"
         >
-          <Navbar />
-          <Hero />
-          <Ticker />
-          <About />
-          <Specs />
-          <Products />
-          <Industries />
-          <WhyUs />
-          <Contact />
-          <Footer />
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/buttweld-fittings" element={<ButtweldFittings />} />
+              <Route path="/coating" element={<Coating />} />
+              <Route path="/fasteners" element={<Fasteners />} />
+              <Route path="/ferrule-fittings" element={<FerruleFittings />} />
+              <Route path="/flanges" element={<Flanges />} />
+              <Route path="/forged-fittings" element={<ForgedFittings />} />
+              <Route path="/olets" element={<Olets />} />
+              <Route path="/pipes-tubes" element={<PipesTubes />} />
+              <Route path="/round-bar" element={<RoundBar />} />
+              <Route path="/sheet-plate-coils" element={<SheetPlateCoils />} />
+              <Route path="/spools" element={<Spools />} />
+              <Route path="/valves" element={<Valves />} />
+            </Routes>
+            <Footer />
+          </Router>
         </motion.div>
       )}
     </>

@@ -6,11 +6,38 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: '', lastName: '', email: '', phone: '', product: '', message: ''
   });
+  const [status, setStatus] = useState(''); // For success/error messages
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert('Thank you! We will get back to you shortly.');
-    setFormData({ firstName: '', lastName: '', email: '', phone: '', product: '', message: '' });
+    setStatus('Sending...');
+
+    try {
+      const response = await fetch('https://formspree.io/f/mdapzzbw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          product: formData.product,
+          message: formData.message,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus('Thank you! We will get back to you shortly.');
+        setFormData({ firstName: '', lastName: '', email: '', phone: '', product: '', message: '' });
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Form send failed:', error);
+      setStatus('Failed to send message. Please try again.');
+    }
   };
 
   return (
@@ -120,6 +147,11 @@ const Contact = () => {
             </button>
           </form>
 
+          {status && (
+            <div className={`mt-4 p-3 rounded-md text-center font-rajdhani text-base ${status.includes('Thank you') ? 'bg-green-600 text-white' : status === 'Sending...' ? 'bg-blue-600 text-white' : 'bg-red-600 text-white'}`}>
+              {status}
+            </div>
+          )}
         </motion.div>
       </div>
     </section>
