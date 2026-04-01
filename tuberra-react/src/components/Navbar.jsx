@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, X, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const productsList = [
   "Pipes & Tubes", "Buttweld Fittings", "Flanges", "Forged Fittings", 
@@ -27,13 +28,13 @@ const Navbar = () => {
         className={`fixed top-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-[1100px] z-50 flex items-center justify-between px-6 lg:px-8 h-[55px] transition-all duration-500 bg-white/90 backdrop-blur-2xl border border-gray-200 shadow-[0_10px_40px_rgba(0,0,0,0.1)] rounded-full`}
       >
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3 no-underline">
+        <Link to="/" className="flex items-center gap-3 no-underline">
           <img src="/logo.png" alt="Tuberra Logo" className="h-8 w-auto object-contain" />
           <div className="flex flex-col justify-center">
             <div className="font-bebas text-[1.4rem] tracking-[0.15em] text-[#0f172a] leading-none mb-1">TUBERRA</div>
             <div className="text-[0.6rem] tracking-[0.25em] text-[#1456a8] font-rajdhani font-bold uppercase leading-none pl-[0.1em]">STEEL COMPANY</div>
           </div>
-        </a>
+        </Link>
 
         {/* Links */}
         <div className="hidden lg:flex items-center gap-2">
