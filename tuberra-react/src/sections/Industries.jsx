@@ -29,43 +29,37 @@ const Industries = () => {
          <div className="w-[2px] h-full bg-gradient-to-b from-transparent via-[#1456a8] to-transparent absolute right-1/4"></div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto relative z-10">
+      <div className="max-w-[1100px] mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <div className="text-[0.75rem] tracking-[0.3em] uppercase font-bold text-[#3a8dde] mb-3">Sectors We Serve</div>
-          <h2 className="font-bebas text-[clamp(2.5rem,4vw,3.8rem)] tracking-[0.05em] text-white leading-[1.05] mb-6">
+          <h2 className="font-bebas text-[clamp(2.5rem,4vw,3.5rem)] tracking-[0.05em] text-white leading-[1.05] mb-5">
             Powering Global <span className="clip-text-gradient bg-clip-text text-transparent bg-gradient-to-r from-[#3a8dde] to-[#1456a8]">Industries</span>   
           </h2>
-          <div className="w-[60px] h-[3px] rounded-full bg-gradient-to-r from-[#1456a8] to-[#3a8dde] mx-auto shadow-[0_0_10px_rgba(58,141,222,0.8)]" />
+          <div className="w-[50px] h-[3px] rounded-full bg-gradient-to-r from-[#1456a8] to-[#3a8dde] mx-auto shadow-[0_0_10px_rgba(58,141,222,0.8)]" />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-6 md:grid-flow-col gap-x-8 gap-y-4 lg:gap-x-24 max-w-[900px] mx-auto">
           {industriesData.map((ind, i) => (
             <motion.div
               key={ind.id}
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              initial={{ opacity: 0, x: i < 6 ? -30 : 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: i * 0.1, type: "spring", stiffness: 100 }}
-              className="h-full cursor-pointer"
+              transition={{ duration: 0.5, delay: (i % 6) * 0.1 }}
+              className="flex items-center gap-5 cursor-pointer group py-2 px-4 rounded-xl hover:bg-[#1456a8]/10 transition-colors duration-300"
             >
-              <GlowCard customSize={true} className="w-full h-full p-8 group z-10 glass-panel glass-panel-hover">
-                {/* Animated hover gradient bubble */}
-                <div className="absolute -inset-[100%] bg-gradient-to-r from-transparent via-[#3a8dde]/10 to-transparent transition-transform duration-1000 -translate-x-full group-hover:translate-x-full z-0"></div>
-
-                <div className="w-16 h-16 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#3a8dde] mb-6 group-hover:bg-[#3a8dde] group-hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(58,141,222,0.2)] group-hover:shadow-[0_0_25px_rgba(58,141,222,0.6)] group-hover:scale-110 relative z-10">
-                  {ind.icon}
-                </div>
-                <h3 className="font-rajdhani text-[1.4rem] font-bold text-white mb-3 tracking-wide relative z-10">{ind.title}</h3>
-                <p className="text-silver text-[0.95rem] leading-relaxed relative z-10">        
-                  {ind.desc}
-                </p>
-              </GlowCard>
+              <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#3a8dde] group-hover:bg-[#3a8dde] group-hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(58,141,222,0.1)] group-hover:shadow-[0_0_20px_rgba(58,141,222,0.5)] group-hover:scale-110 shrink-0">
+                {ind.icon}
+              </div>
+              <h3 className="font-rajdhani text-[1.4rem] font-bold text-silver tracking-wide group-hover:text-white transition-colors duration-300">
+                {ind.title}
+              </h3>
             </motion.div>
           ))}
         </div>
