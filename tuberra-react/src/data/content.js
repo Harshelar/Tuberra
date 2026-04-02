@@ -120,14 +120,18 @@ export const whyUsData = [
 ];
 
 export const industriesData = [
+  { title: "Textile", img: "https://images.unsplash.com/photo-1544441893-675973e31985?w=400&q=80" },
+  { title: "Chemicals & Paint", img: "https://images.unsplash.com/photo-1583912265924-ceba1a3a4115?w=400&q=80" },
+  { title: "Distalries & Brewries", img: "https://images.unsplash.com/photo-1584225064785-c62a8b43d148?w=400&q=80" },
+  { title: "Paper & Pulp", img: "https://images.unsplash.com/photo-1595113316349-944121631481?w=400&q=80" },
+  { title: "Integrated Steel Plant", img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&q=80" },
+  { title: "Sugar", img: "https://images.unsplash.com/photo-1621245749718-e3cc0d5ca0d2?w=400&q=80" },
   { title: "Oil & Gas", img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&q=80" },
-  { title: "Pharmaceutical", img: "https://images.unsplash.com/photo-1576400883215-7083980b6193?w=400&q=80" },
-  { title: "Power Plants", img: "https://images.unsplash.com/photo-1548783300-a6e1c9e9d265?w=400&q=80" },
-  { title: "Automotive", img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&q=80" },
-  { title: "Petro Chemical", img: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=400&q=80" },
+  { title: "Powerplants", img: "https://images.unsplash.com/photo-1548783300-a6e1c9e9d265?w=400&q=80" },
+  { title: "Petrochemicals", img: "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=400&q=80" },
+  { title: "Pharmaceuticals", img: "https://images.unsplash.com/photo-1576400883215-7083980b6193?w=400&q=80" },
   { title: "Aerospace", img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80" },
-  { title: "Construction", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
-  { title: "Marine", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80" }
+  { title: "Automotive", img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&q=80" }
 ];
 export const specsData = [
   { title: 'STAINLESS STEEL', grades: 'SS 304, 304L, SS 316, 316L, SS 310, 310S, SS 321, 321H, SS 347, 347H, SS 904L, Duplex 2205, Duplex 2304, Super Duplex 2507, Zeron 100, 254 SMO, AL-6XN, 17-4 PH (630), 15-5 PH, 13-8 Mo' },

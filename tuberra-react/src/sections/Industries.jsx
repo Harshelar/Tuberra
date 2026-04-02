@@ -1,15 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Flame, Droplet, Zap, Focus, Factory, Cpu } from 'lucide-react';
+import { Flame, Droplet, Zap, Focus, Factory, Cpu, Settings, Thermometer, TestTube, TreePine, Package, Truck } from 'lucide-react';
 import { GlowCard } from '../components/ui/spotlight-card';
 
 const industriesData = [
-  { id: 1, title: 'Oil & Gas', icon: <Flame size={32} strokeWidth={1.5} />, desc: 'High-pressure capabilities for harsh extraction.' },
-  { id: 2, title: 'Petrochemicals', icon: <Factory size={32} strokeWidth={1.5} />, desc: 'Corrosion-resistant steel for chemical flow.' },
-  { id: 3, title: 'Water Treatment', icon: <Droplet size={32} strokeWidth={1.5} />, desc: 'Pure flow piping for desalination & management.' },
-  { id: 4, title: 'Power Plants', icon: <Zap size={32} strokeWidth={1.5} />, desc: 'Thermal and nuclear operational grades.' },
-  { id: 5, title: 'Aerospace', icon: <Focus size={32} strokeWidth={1.5} />, desc: 'Precision engineered lightweight alloys.' },
-  { id: 6, title: 'Automotive', icon: <Cpu size={32} strokeWidth={1.5} />, desc: 'Heavy stress structural fitments & parts.' },
+  { id: 1, title: 'Textile', icon: <Settings size={32} strokeWidth={1.5} />, desc: 'Robust processing equipment for textile manufacturing.' },
+  { id: 2, title: 'Chemicals & Paint', icon: <TestTube size={32} strokeWidth={1.5} />, desc: 'Corrosion-resistant grades for chemical formulations.' },
+  { id: 3, title: 'Distalries & Brewries', icon: <Thermometer size={32} strokeWidth={1.5} />, desc: 'High-purity food-grade fittings and tubings.' },
+  { id: 4, title: 'Paper & Pulp', icon: <TreePine size={32} strokeWidth={1.5} />, desc: 'Wear-resistant machinery and flow systems.' },
+  { id: 5, title: 'Integrated Steel Plant', icon: <Factory size={32} strokeWidth={1.5} />, desc: 'Heavy-duty structural components for refining.' },
+  { id: 6, title: 'Sugar', icon: <Package size={32} strokeWidth={1.5} />, desc: 'Abrasion-resistant setups for sugar processing.' },
+  { id: 7, title: 'Oil & Gas', icon: <Flame size={32} strokeWidth={1.5} />, desc: 'High-pressure capabilities for harsh extraction.' },
+  { id: 8, title: 'Powerplants', icon: <Zap size={32} strokeWidth={1.5} />, desc: 'Thermal and nuclear operational grades.' },
+  { id: 9, title: 'Petrochemicals', icon: <Droplet size={32} strokeWidth={1.5} />, desc: 'Corrosion-resistant steel for chemical flow.' },
+  { id: 10, title: 'Pharmaceuticals', icon: <TestTube size={32} strokeWidth={1.5} />, desc: 'Ultra-pure solutions for cleanroom environments.' },
+  { id: 11, title: 'Aerospace', icon: <Focus size={32} strokeWidth={1.5} />, desc: 'Precision engineered lightweight alloys.' },
+  { id: 12, title: 'Automotive', icon: <Truck size={32} strokeWidth={1.5} />, desc: 'Heavy stress structural fitments & parts.' },
 ];
 
 const Industries = () => {
