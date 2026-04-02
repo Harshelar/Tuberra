@@ -84,9 +84,9 @@ const Contact = () => {
           <div className="mt-8 w-full h-[180px] rounded-xl p-1.5 bg-[#10182cb2] border border-[#1456a840] shadow-[0_8px_30px_rgba(20,86,168,0.1)] group transition-all duration-300 hover:border-[#1456a880]">
             <div className="w-full h-full rounded-lg overflow-hidden relative">
               <iframe
-                src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Somji%20Building,%20S.V.P.%20Road,%20Near%20Gol%20Deval%20Temple,%20Mumbai,%20Maharashtra+(Tuberra%20Steel)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3252.5908602229306!2d72.82447291004802!3d18.958002082148184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf2966cd0d65%3A0x96aa0b1511fe8c79!2sTuberra%20Steel%20Company!5e1!3m2!1sen!2sin!4v1775131684639!5m2!1sen!2sin"
                 className="w-full h-full opacity-90 transition-opacity duration-300 group-hover:opacity-100"
-                style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) brightness(85%) contrast(150%)' }}
+                style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
