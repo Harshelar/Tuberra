@@ -6,7 +6,7 @@ import { GlowCard } from '../components/ui/spotlight-card';
 const Specs = () => {
   return (
     <section className="py-24 px-6 lg:px-20 bg-[#060a16]">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -25,7 +25,7 @@ const Specs = () => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">  
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">  
           {specsData.map((spec, index) => (
             <motion.div
               key={index}
@@ -35,17 +35,17 @@ const Specs = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="h-full"
             >
-              <GlowCard customSize={true} className="w-full h-full p-6 group hover:border-[#3a8dde]/50 transition-all duration-500 overflow-hidden relative glass-panel">
+              <GlowCard customSize={true} className="w-full h-full p-5 group hover:border-[#3a8dde]/50 transition-all duration-500 overflow-hidden relative glass-panel">
                 {/* Animated Corner accent */}
-                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[#3a8dde]/20 to-transparent rounded-tr-2xl group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-bl from-[#3a8dde]/20 to-transparent rounded-tr-xl group-hover:scale-150 transition-transform duration-500"></div>
 
-                <h3 className="font-bebas text-[1.5rem] tracking-[0.05em] text-white mb-5 border-b border-white/10 pb-3 relative z-10">
+                <h3 className="font-bebas text-[1.35rem] tracking-[0.05em] text-white mb-4 border-b border-white/10 pb-2.5 relative z-10">
                   {spec.title}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#3a8dde] transition-all duration-500 group-hover:w-full"></span>
                 </h3>
-                <div className="flex flex-wrap gap-2.5 relative z-10">
+                <div className="flex flex-wrap gap-2 relative z-10">
                   {spec.grades.split(', ').map((grade, i) => (
-                    <span key={i} className="px-3 py-1.5 text-[0.85rem] font-medium text-white/90 bg-[#1456a8]/20 border border-[#1456a8]/40 rounded-md hover:bg-[#1456a8]/40 hover:text-white hover:border-[#3a8dde]/60 transition-colors shadow-sm tracking-wide">
+                    <span key={i} className="px-2 py-1 text-[0.75rem] font-medium text-white/90 bg-[#1456a8]/20 border border-[#1456a8]/40 rounded hover:bg-[#1456a8]/40 hover:text-white hover:border-[#3a8dde]/60 transition-colors shadow-sm tracking-wide">
                       {grade}
                     </span>
                   ))}
