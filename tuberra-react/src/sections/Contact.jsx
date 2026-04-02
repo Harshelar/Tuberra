@@ -65,7 +65,7 @@ const Contact = () => {
             {[
               { icon: <MapPin />, title: "Office Address", detail: "201, Somji Building, Shop No. 5, S.V.P. Road, Near Gol Deval Temple, Mumbai - 400 004. Maharashtra, India." },
               { icon: <Phone />, title: "Phone", detail: "+91 99678 78897" },
-              { icon: <Mail />, title: "Email", detail: "tuberra@tuberrasteel.com" },
+              { icon: <Mail />, title: "Email", detail: <>sales@tuberrasteel.com <br /> exports@tuberrasteel.com</> },
               { icon: <Clock />, title: "Business Hours", detail: "Mon – Sat: 9:00 AM – 6:30 PM IST" }
             ].map((info, i) => (
               <div key={i} className="flex gap-4 items-start">
