@@ -130,15 +130,11 @@ export const industriesData = [
   { title: "Marine", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80" }
 ];
 export const specsData = [
-  { title: 'Stainless Steel', grades: 'ASTM A182, A240, A312, A358, A403, A213, A249, A269, A479, A276, 202, 304, 304L, 304H, 316, 316L, 316H, 316Ti, 309, 310, 317, 347, 904L' },
-  { title: 'Duplex & Super Duplex', grades: 'ASTM A815, A182, A790, UNS31803, UNS32205, UNS32760, UNS32750' },
-  { title: 'Cupro Nickel', grades: 'C70600 (90:10), C71500 (70:30), C71640' },
-  { title: 'Nickel & Monel', grades: 'UNS N02200, N02201, N04400, N05500' },
-  { title: 'INCONEL', grades: 'UNS N06600, N06601, N06625, N08810, N08825, N08031' },
-  { title: 'HASTELLOY', grades: 'UNS N10276, N06022, N10665' },
-  { title: 'Titanium', grades: 'Titanium Grade 1/2/3, DIN-3.7025, DIN-3.7035, DIN-3.7055' },
-  { title: 'Alloy Steel', grades: 'ASTM A182/ SA234 GR-1, GR-5, GR-9, GR-11, GR-12, GR-22, GR-91' },
-  { title: 'Carbon Steel', grades: 'ASTM A105, A106 GRADE A/B/C, SA234 WPB' },
-  { title: 'LTCS', grades: 'ASTM A333 GRADE 3/6/9, A350 LF2, A420 WP 6, A5 GRADE 60/70' }
+  { title: 'STAINLESS STEEL', grades: 'SS 304, 304L, SS 316, 316L, SS 310, 310S, SS 321, 321H, SS 347, 347H, SS 904L, Duplex 2205, Duplex 2304, Super Duplex 2507, Zeron 100, 254 SMO, AL-6XN, 17-4 PH (630), 15-5 PH, 13-8 Mo' },
+  { title: 'CARBON STEEL', grades: 'ASTM A106 Gr A/B/C, ASTM A53 Gr A/B, API 5L Gr B, X42, X52, X60, X65, X70, ASTM A234 WPB, ASTM A105, ASTM A350 LF2, ASTM A36, ASTM A283 Gr C, ASTM A516 Gr 60/65/70, ASTM A572 Gr 50, IS 2062 E250 / E350, EN8 / C45, EN19, SAE 1018 / 1020 / 1045' },
+  { title: 'MONEL & INCONEL', grades: 'Monel 400 series, Monel K500 (N05500), Inconel 600 (N06600), Inconel 601 (N06601), Inconel 617 (N06617), Inconel 625 (N06625), Inconel 690 (N06690), Inconel 718 (N07718), Inconel 725 (N07725), Inconel 738 (N07738), Inconel 825 (N08825)' },
+  { title: 'HASTELLOY', grades: 'Hastelloy C276 (N10276), Hastelloy C22 (N06022), Hastelloy B2 (N10665)' },
+  { title: 'TITANIUM', grades: 'Titanium Grade 1, Titanium Grade 2, Titanium Grade 3, Titanium Grade 4, Titanium Grade 5(Ti-6Al-4V), Titanium Grade 7, Titanium Grade 9(Ti-3Al-2.5V), Titanium Grade 12(Ti-0.3Mo-0.8Ni), Titanium Grade 23(Ti-6Al-4V ELI)' },
+  { title: 'CHROME-MOLY (Cr-Mo)', grades: 'ASTM A335 P5, ASTM A335 P9, ASTM A335 P11, ASTM A335 P22, ASTM A335 P91, ASTM A335 P92, ASTM A213 T5, ASTM A213 T9, ASTM A213 T11, ASTM A213 T22, ASTM A213 T91, ASTM A182 F5, ASTM A182 F9, ASTM A182 F11, ASTM A182 F22, ASTM A182 F91' }
 ];
 
