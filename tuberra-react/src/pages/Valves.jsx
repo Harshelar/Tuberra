@@ -56,13 +56,28 @@ const Valves = () => {
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types Of Valves</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Ball Valves</li><li>•	Gate Valves</li><li>•	Globe Valves</li><li>•	Check Valves</li><li>•	Butterfly Valves</li><li>•	Needle Valves</li><li>•	Plug Valves</li><li>•	Control Valves</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Ball Valves</li>
+                  <li>Gate Valves</li>
+                  <li>Globe Valves</li>
+                  <li>Check Valves</li>
+                  <li>Butterfly Valves</li>
+                  <li>Needle Valves</li>
+                  <li>Plug Valves</li>
+                  <li>Control Valves</li>
+                </ul>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: API, ASTM, ASME, DIN</li><li>•	Size Range: ½” to 48”</li><li>•	Pressure Class: 150# to 2500#</li><li>•	Operation: Manual / Gear / Pneumatic / Electric</li><li>•	End Connection: Flanged / Threaded / Socket Weld / Butt Weld</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Standards: API, ASTM, ASME, DIN</li>
+                  <li>Size Range: ½” to 48”</li>
+                  <li>Pressure Class: 150# to 2500#</li>
+                  <li>Operation: Manual / Gear / Pneumatic / Electric</li>
+                  <li>End Connection: Flanged / Threaded / Socket Weld / Butt Weld</li>
+                </ul>
               </div>
             </div>
             <div>
@@ -77,6 +92,12 @@ const Valves = () => {
                 <span className="block mt-1">Oil & Gas, Water Treatment, Power Plants, Chemical Industry, Marine</span>
               </div>
             </div>
+          
+          
+          
+          
+          
+          
           
           
           </motion.div>

@@ -60,19 +60,43 @@ const Fasteners = () => {
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types Of Fasteners</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Bolts (Hex Bolts, Heavy Hex Bolts)</li><li>•	Stud Bolts (Full Thread / Double End)</li><li>•	Nuts (Hex Nuts, Heavy Hex Nuts, Lock Nuts)</li><li>•	Screws (Machine Screws, Self-Tapping Screws)</li><li>•	Washers (Flat, Spring, Plain)</li><li>•	Anchor Bolts</li><li>•	U-Bolts</li><li>•	Eye Bolts</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Bolts (Hex Bolts, Heavy Hex Bolts)</li>
+                  <li>Stud Bolts (Full Thread / Double End)</li>
+                  <li>Nuts (Hex Nuts, Heavy Hex Nuts, Lock Nuts)</li>
+                  <li>Screws (Machine Screws, Self-Tapping Screws)</li>
+                  <li>Washers (Flat, Spring, Plain)</li>
+                  <li>Anchor Bolts</li>
+                  <li>U-Bolts</li>
+                  <li>Eye Bolts</li>
+                </ul>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: ASTM A193, A194, A307, A320, A325, A490, DIN, ISO</li><li>•	Size Range: M6 to M100 / ¼” to 4”</li><li>•	Length: Custom as per requirement</li><li>•	Thread Type: Metric / UNC / UNF / BSW / BSF</li><li>•	Coating: Black, Zinc Plated, Hot Dip Galvanized, PTFE</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Standards: ASTM A193, A194, A307, A320, A325, A490, DIN, ISO</li>
+                  <li>Size Range: M6 to M100 / ¼” to 4”</li>
+                  <li>Length: Custom as per requirement</li>
+                  <li>Thread Type: Metric / UNC / UNF / BSW / BSF</li>
+                  <li>Coating: Black, Zinc Plated, Hot Dip Galvanized, PTFE</li>
+                </ul>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Stainless Steel (304, 316, 316L, etc.)</li><li>•	Carbon Steel (A307, A325, A490)</li><li>•	Alloy Steel (A193 B7, B16)</li><li>•	Duplex & Super Duplex</li><li>•	Nickel Alloys (Monel, Inconel, Hastelloy)</li><li>•	Titanium</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Stainless Steel (304, 316, 316L, etc.)</li>
+                  <li>Carbon Steel (A307, A325, A490)</li>
+                  <li>Alloy Steel (A193 B7, B16)</li>
+                </ul>
+                <span className="text-white font-semibold block mt-4 mb-2">Duplex & Super Duplex</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Nickel Alloys (Monel, Inconel, Hastelloy)</li>
+                </ul>
+                <span className="text-white font-semibold block mt-4 mb-2">Titanium</span>
               </div>
             </div>
             <div>
@@ -81,6 +105,12 @@ const Fasteners = () => {
                 <span className="block mt-1">Oil & Gas, Refineries, Power Plants, Structural Steel, Construction, Heavy Engineering</span>
               </div>
             </div>
+          
+          
+          
+          
+          
+          
           
           
           </motion.div>

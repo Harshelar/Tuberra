@@ -58,14 +58,14 @@ const PipesTubes = () => {
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types Of Pipes & Tubes</h3>
               <div className="text-silver">
                 <ul className="text-silver space-y-1 list-none pl-0">
-                  <li>•	Seamless Pipes</li>
-                  <li>•	ERW Pipes (Electric Resistance Welded)</li>
-                  <li>•	Welded Pipes</li>
-                  <li>•	Round Tubes</li>
-                  <li>•	Square & Rectangular Tubes</li>
-                  <li>•	Heat Exchanger Tubes</li>
-                  <li>•	Boiler Tubes</li>
-                  <li>•	Instrumentation Tubes</li>
+                  <li>Seamless Pipes</li>
+                  <li>ERW Pipes (Electric Resistance Welded)</li>
+                  <li>Welded Pipes</li>
+                  <li>Round Tubes</li>
+                  <li>Square & Rectangular Tubes</li>
+                  <li>Heat Exchanger Tubes</li>
+                  <li>Boiler Tubes</li>
+                  <li>Instrumentation Tubes</li>
                 </ul>
               </div>
             </div>
@@ -73,33 +73,30 @@ const PipesTubes = () => {
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
               <div className="text-silver">
                 <ul className="text-silver space-y-1 list-none pl-0">
-                  <li>•	Standards: ASTM, ASME, API, EN, DIN</li>
-                  <li>•	Size Range: ½” NB to 48” NB (custom sizes available)</li>
-                  <li>•	Wall Thickness: SCH 10 to SCH XXS</li>
-                  <li>•	Form: Round, Square, Rectangular</li>
-                  <li>•	Finish: Annealed, Pickled, Polished, Bright Annealed</li>
-                  <li>•	Type: Seamless / Welded / ERW</li>
+                  <li>Standards: ASTM, ASME, API, EN, DIN</li>
+                  <li>Size Range: ½” NB to 48” NB (custom sizes available)</li>
+                  <li>Wall Thickness: SCH 10 to SCH XXS</li>
+                  <li>Form: Round, Square, Rectangular</li>
+                  <li>Finish: Annealed, Pickled, Polished, Bright Annealed</li>
+                  <li>Type: Seamless / Welded / ERW</li>
                 </ul>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
               <div className="text-silver">
-                <span className="text-white font-semibold block mt-3 mb-1">Stainless Steel</span>
+                <span className="text-white font-semibold block mt-4 mb-2">Stainless Steel</span>
                 <span className="block mt-1">SS 304, 304L, 316, 316L, 310, 310S, 321, 321H, 347, 347H, 904L</span>
                 <span className="block mt-1">Duplex 2205, 2304, Super Duplex 2507, Zeron 100</span>
                 <span className="block mt-1">254 SMO, AL-6XN</span>
                 <span className="block mt-1">17-4 PH, 15-5 PH, 13-8 Mo</span>
-                
-                <span className="text-white font-semibold block mt-3 mb-1">Carbon Steel</span>
+                <span className="text-white font-semibold block mt-4 mb-2">Carbon Steel</span>
                 <span className="block mt-1">ASTM A106 Gr A/B/C, ASTM A53 Gr A/B</span>
                 <span className="block mt-1">API 5L Gr B, X42, X52, X60, X65, X70</span>
-                
-                <span className="text-white font-semibold block mt-3 mb-1">Alloy Steel (Chrome-Moly)</span>
+                <span className="text-white font-semibold block mt-4 mb-2">Alloy Steel (Chrome-Moly)</span>
                 <span className="block mt-1">ASTM A335 P5, P9, P11, P22, P91, P92</span>
                 <span className="block mt-1">ASTM A213 T5, T9, T11, T22, T91</span>
-                
-                <span className="text-white font-semibold block mt-3 mb-1">Nickel & Special Alloys</span>
+                <span className="text-white font-semibold block mt-4 mb-2">Nickel & Special Alloys</span>
                 <span className="block mt-1">Nickel 200, 201</span>
                 <span className="block mt-1">Monel 400, K500</span>
                 <span className="block mt-1">Inconel 600, 601, 625, 718</span>
@@ -112,17 +109,23 @@ const PipesTubes = () => {
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
               <div className="text-silver">
                 <ul className="text-silver space-y-1 list-none pl-0">
-                  <li>•	Oil & Gas Industry</li>
-                  <li>•	Petrochemical Plants</li>
-                  <li>•	Power Generation</li>
-                  <li>•	Marine & Offshore</li>
-                  <li>•	Chemical Processing</li>
-                  <li>•	Heat Exchangers & Boilers</li>
-                  <li>•	Construction & Infrastructure</li>
-                  <li>•	Heavy Engineering</li>
+                  <li>Oil & Gas Industry</li>
+                  <li>Petrochemical Plants</li>
+                  <li>Power Generation</li>
+                  <li>Marine & Offshore</li>
+                  <li>Chemical Processing</li>
+                  <li>Heat Exchangers & Boilers</li>
+                  <li>Construction & Infrastructure</li>
+                  <li>Heavy Engineering</li>
                 </ul>
               </div>
             </div>
+          
+          
+          
+          
+          
+          
           
           
 

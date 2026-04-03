@@ -56,13 +56,37 @@ const Coating = () => {
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types Of Gaskets</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Spiral Wound Gaskets</li><li>•	Ring Type Joint (RTJ) Gaskets</li><li>•	Soft Gaskets (Non-Metallic)</li><li>•	Metal Jacketed Gaskets</li><li>•	CAF / CNAF Gaskets</li><li>•	PTFE Gaskets</li><li>•	Graphite Gaskets</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Spiral Wound Gaskets</li>
+                  <li>Ring Type Joint (RTJ) Gaskets</li>
+                  <li>Soft Gaskets (Non-Metallic)</li>
+                  <li>Metal Jacketed Gaskets</li>
+                  <li>CAF / CNAF Gaskets</li>
+                  <li>PTFE Gaskets</li>
+                  <li>Graphite Gaskets</li>
+                </ul>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: ASME B16.20, B16.21, API</li><li>•	Size Range: ½” to 60”</li><li>•	Class: 150# to 2500#</li><li>•	Filler Materials: Graphite, PTFE, Ceramic</li></ul><span className="text-white font-semibold block mt-3 mb-1">Materials</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Stainless Steel</li><li>•	Carbon Steel</li><li>•	Alloy Steel</li><li>•	PTFE / Graphite / Rubber</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Standards: ASME B16.20, B16.21, API</li>
+                  <li>Size Range: ½” to 60”</li>
+                  <li>Class: 150# to 2500#</li>
+                  <li>Filler Materials: Graphite, PTFE, Ceramic</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Materials</h3>
+              <div className="text-silver">
+                <span className="text-white font-semibold block mt-4 mb-2">Stainless Steel</span>
+                <span className="text-white font-semibold block mt-4 mb-2">Carbon Steel</span>
+                <span className="text-white font-semibold block mt-4 mb-2">Alloy Steel</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>PTFE / Graphite / Rubber</li>
+                </ul>
               </div>
             </div>
             <div>
@@ -71,6 +95,12 @@ const Coating = () => {
                 <span className="block mt-1">Flanged joints in Oil & Gas, Refineries, Chemical Plants, Power Generation</span>
               </div>
             </div>
+          
+          
+          
+          
+          
+          
           
           
           </motion.div>

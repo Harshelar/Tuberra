@@ -56,15 +56,73 @@ const Olets = () => {
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types Of Olets</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Weldolet</li><li>•	Sockolet</li><li>•	Threadolet</li><li>•	Elbolet</li><li>•	Latrolet</li><li>•	Sweepolet</li><li>•	Nipolet</li><li>•	Coupolet</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Weldolet</li>
+                  <li>Sockolet</li>
+                  <li>Threadolet</li>
+                  <li>Elbolet</li>
+                  <li>Latrolet</li>
+                  <li>Sweepolet</li>
+                  <li>Nipolet</li>
+                  <li>Coupolet</li>
+                </ul>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: MSS SP-97, ASME B16.11</li><li>•	Size Range: ½” to 24” (branch & run)</li><li>•	Pressure Class: 3000#, 6000#, 9000#</li><li>•	Connection: Butt Weld / Socket Weld / Threaded</li></ul><span className="block mt-1">4) Grades & Materials</span><span className="text-white font-semibold block mt-3 mb-1">Stainless Steel</span><span className="text-white font-semibold block mt-3 mb-1">SS 304, 304L, 316, 316L, 310, 310S, 321, 321H, 347, 347H, 904L</span><span className="block mt-1">Duplex 2205, 2304, Super Duplex 2507, Zeron 100</span><span className="text-white font-semibold block mt-3 mb-1">254 SMO, AL-6XN</span><span className="block mt-1">17-4 PH, 15-5 PH, 13-8 Mo</span><span className="text-white font-semibold block mt-3 mb-1">Carbon Steel</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A106 Gr A/B/C, ASTM A53 Gr A/B</span><span className="text-white font-semibold block mt-3 mb-1">API 5L Gr B, X42, X52, X60, X65, X70</span><span className="text-white font-semibold block mt-3 mb-1">Alloy Steel (Chrome-Moly)</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A335 P5, P9, P11, P22, P91, P92</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A213 T5, T9, T11, T22, T91</span><span className="text-white font-semibold block mt-3 mb-1">Nickel & Special Alloys</span><span className="text-white font-semibold block mt-3 mb-1">Nickel 200, 201</span><span className="text-white font-semibold block mt-3 mb-1">Monel 400, K500</span><span className="text-white font-semibold block mt-3 mb-1">Inconel 600, 601, 625, 718</span><span className="text-white font-semibold block mt-3 mb-1">Hastelloy C276, C22, B2</span><span className="text-white font-semibold block mt-3 mb-1">Titanium Grade 2, Grade 5</span><span className="text-white font-semibold block mt-3 mb-1">Cupronickel 90/10, 70/30</span><span className="block mt-1">5) Applications</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Oil & Gas Industry</li><li>•	Petrochemical Plants</li><li>•	Power Generation</li><li>•	Marine & Offshore</li><li>•	Chemical Processing</li><li>•	Heat Exchangers & Boilers</li><li>•	Construction & Infrastructure</li><li>•	Heavy Engineering</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Standards: MSS SP-97, ASME B16.11</li>
+                  <li>Size Range: ½” to 24” (branch & run)</li>
+                  <li>Pressure Class: 3000#, 6000#, 9000#</li>
+                  <li>Connection: Butt Weld / Socket Weld / Threaded</li>
+                </ul>
               </div>
             </div>
+            <div>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
+              <div className="text-silver">
+                <span className="text-white font-semibold block mt-4 mb-2">Stainless Steel</span>
+                <span className="block mt-1">SS 304, 304L, 316, 316L, 310, 310S, 321, 321H, 347, 347H, 904L</span>
+                <span className="block mt-1">Duplex 2205, 2304, Super Duplex 2507, Zeron 100</span>
+                <span className="block mt-1">254 SMO, AL-6XN</span>
+                <span className="block mt-1">17-4 PH, 15-5 PH, 13-8 Mo</span>
+                <span className="text-white font-semibold block mt-4 mb-2">Carbon Steel</span>
+                <span className="block mt-1">ASTM A106 Gr A/B/C, ASTM A53 Gr A/B</span>
+                <span className="block mt-1">API 5L Gr B, X42, X52, X60, X65, X70</span>
+                <span className="text-white font-semibold block mt-4 mb-2">Alloy Steel (Chrome-Moly)</span>
+                <span className="block mt-1">ASTM A335 P5, P9, P11, P22, P91, P92</span>
+                <span className="block mt-1">ASTM A213 T5, T9, T11, T22, T91</span>
+                <span className="text-white font-semibold block mt-4 mb-2">Nickel & Special Alloys</span>
+                <span className="block mt-1">Nickel 200, 201</span>
+                <span className="block mt-1">Monel 400, K500</span>
+                <span className="block mt-1">Inconel 600, 601, 625, 718</span>
+                <span className="block mt-1">Hastelloy C276, C22, B2</span>
+                <span className="block mt-1">Titanium Grade 2, Grade 5</span>
+                <span className="block mt-1">Cupronickel 90/10, 70/30</span>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Oil & Gas Industry</li>
+                  <li>Petrochemical Plants</li>
+                  <li>Power Generation</li>
+                  <li>Marine & Offshore</li>
+                  <li>Chemical Processing</li>
+                  <li>Heat Exchangers & Boilers</li>
+                  <li>Construction & Infrastructure</li>
+                  <li>Heavy Engineering</li>
+                </ul>
+              </div>
+            </div>
+          
+          
+          
+          
+          
+          
           
           
           </motion.div>

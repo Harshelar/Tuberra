@@ -56,15 +56,105 @@ const Flanges = () => {
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types Of Flanges</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Weld Neck Flanges (WN)</li><li>•	Slip-On Flanges (SO)</li><li>•	Blind Flanges (BL)</li><li>•	Socket Weld Flanges (SW)</li><li>•	Threaded Flanges (TH)</li><li>•	Lap Joint Flanges (LJ)</li><li>•	Orifice Flanges</li><li>•	Spectacle Blind Flanges</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Weld Neck Flanges (WN)</li>
+                  <li>Slip-On Flanges (SO)</li>
+                  <li>Blind Flanges (BL)</li>
+                  <li>Socket Weld Flanges (SW)</li>
+                  <li>Threaded Flanges (TH)</li>
+                  <li>Lap Joint Flanges (LJ)</li>
+                  <li>Orifice Flanges</li>
+                  <li>Spectacle Blind Flanges</li>
+                </ul>
               </div>
             </div>
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
               <div className="text-silver">
-                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: ASTM / ASME B16.5, B16.47, DIN, EN, BS</li><li>•	Size Range: ½” NB to 48” NB (Custom sizes available)</li><li>•	Pressure Class: 150#, 300#, 600#, 900#, 1500#, 2500#</li><li>•	Facing: RF (Raised Face), FF (Flat Face), RTJ (Ring Type Joint)</li><li>•	Manufacturing: Forged / Plate Cut</li><li>•	Finish: Anti-rust coating / Oil coated / Machined</li></ul><span className="block mt-1">4) Grades & Materials</span><span className="text-white font-semibold block mt-3 mb-1">CARBON STEEL FLANGES</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	ASTM A105  (most common)</li><li>•	ASTM A350 LF2 (low temperature)</li><li>•	ASTM A694 F42 / F52 / F60 / F65 / F70 (high strength / pipeline)</li></ul><span className="text-white font-semibold block mt-3 mb-1">STAINLESS STEEL FLANGES</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	ASTM A182 F304 / F304L</li><li>•	ASTM A182 F316 / F316L</li><li>•	ASTM A182 F321</li><li>•	ASTM A182 F347</li><li>•	ASTM A182 F904L</li></ul><span className="text-white font-semibold block mt-3 mb-1">ALLOY STEEL (CHROME-MOLY)</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	ASTM A182 F5</li><li>•	ASTM A182 F9</li><li>•	ASTM A182 F11</li><li>•	ASTM A182 F22</li><li>•	ASTM A182 F91</li></ul><span className="text-white font-semibold block mt-3 mb-1">DUPLEX / SUPER DUPLEX</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	ASTM A182 F51 (Duplex 2205)</li><li>•	ASTM A182 F53 (Super Duplex 2507)</li><li>•	ASTM A182 F55</li></ul><span className="text-white font-semibold block mt-3 mb-1">NICKEL ALLOYS</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	ASTM B564 (Monel 400 / K500)</li><li>•	ASTM B564 (Inconel 600 / 625 / 718)</li><li>•	ASTM B564 (Hastelloy C276 / C22)</li></ul><span className="text-white font-semibold block mt-3 mb-1">TITANIUM</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	ASTM B381 Gr 2</li><li>•	ASTM B381 Gr 5</li></ul><span className="text-white font-semibold block mt-3 mb-1">CUPRONICKEL</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	ASTM B151 / B152 (Cu-Ni 90/10, 70/30)</li></ul><span className="block mt-1">👉 Dimensions =</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	ASME B16.5 (up to 24”)</li><li>•	ASME B16.47 (large size)</li></ul><span className="block mt-1">5) Applications</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Oil & Gas Industry</li><li>•	Petrochemical Plants</li><li>•	Power Generation</li><li>•	Marine & Offshore</li><li>•	Chemical Processing</li><li>•	Heat Exchangers & Boilers</li><li>•	Construction & Infrastructure</li><li>•	Heavy Engineering</li></ul>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Standards: ASTM / ASME B16.5, B16.47, DIN, EN, BS</li>
+                  <li>Size Range: ½” NB to 48” NB (Custom sizes available)</li>
+                  <li>Pressure Class: 150#, 300#, 600#, 900#, 1500#, 2500#</li>
+                  <li>Facing: RF (Raised Face), FF (Flat Face), RTJ (Ring Type Joint)</li>
+                  <li>Manufacturing: Forged / Plate Cut</li>
+                  <li>Finish: Anti-rust coating / Oil coated / Machined</li>
+                </ul>
               </div>
             </div>
+            <div>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
+              <div className="text-silver">
+                <span className="text-white font-semibold block mt-4 mb-2">CARBON STEEL FLANGES</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>ASTM A105  (most common)</li>
+                  <li>ASTM A350 LF2 (low temperature)</li>
+                  <li>ASTM A694 F42 / F52 / F60 / F65 / F70 (high strength / pipeline)</li>
+                </ul>
+                <span className="text-white font-semibold block mt-4 mb-2">STAINLESS STEEL FLANGES</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>ASTM A182 F304 / F304L</li>
+                  <li>ASTM A182 F316 / F316L</li>
+                  <li>ASTM A182 F321</li>
+                  <li>ASTM A182 F347</li>
+                  <li>ASTM A182 F904L</li>
+                </ul>
+                <span className="text-white font-semibold block mt-4 mb-2">ALLOY STEEL (CHROME-MOLY)</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>ASTM A182 F5</li>
+                  <li>ASTM A182 F9</li>
+                  <li>ASTM A182 F11</li>
+                  <li>ASTM A182 F22</li>
+                  <li>ASTM A182 F91</li>
+                </ul>
+                <span className="text-white font-semibold block mt-4 mb-2">DUPLEX / SUPER DUPLEX</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>ASTM A182 F51 (Duplex 2205)</li>
+                  <li>ASTM A182 F53 (Super Duplex 2507)</li>
+                  <li>ASTM A182 F55</li>
+                </ul>
+                <span className="text-white font-semibold block mt-4 mb-2">NICKEL ALLOYS</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>ASTM B564 (Monel 400 / K500)</li>
+                  <li>ASTM B564 (Inconel 600 / 625 / 718)</li>
+                  <li>ASTM B564 (Hastelloy C276 / C22)</li>
+                </ul>
+                <span className="text-white font-semibold block mt-4 mb-2">TITANIUM</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>ASTM B381 Gr 2</li>
+                  <li>ASTM B381 Gr 5</li>
+                </ul>
+                <span className="text-white font-semibold block mt-4 mb-2">CUPRONICKEL</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>ASTM B151 / B152 (Cu-Ni 90/10, 70/30)</li>
+                </ul>
+                <span className="block mt-1">👉 Dimensions =</span>
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>ASME B16.5 (up to 24”)</li>
+                  <li>ASME B16.47 (large size)</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0">
+                  <li>Oil & Gas Industry</li>
+                  <li>Petrochemical Plants</li>
+                  <li>Power Generation</li>
+                  <li>Marine & Offshore</li>
+                  <li>Chemical Processing</li>
+                  <li>Heat Exchangers & Boilers</li>
+                  <li>Construction & Infrastructure</li>
+                  <li>Heavy Engineering</li>
+                </ul>
+              </div>
+            </div>
+          
+          
+          
+          
+          
+          
           
           
           </motion.div>
