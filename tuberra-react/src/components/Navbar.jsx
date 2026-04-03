@@ -88,20 +88,13 @@ const Navbar = () => {
             <Search size={18} />
           </button>
           
-          <button 
-            onClick={() => document.getElementById('contact').scrollIntoView({behavior:'smooth'})}
-            className="ml-2 bg-gradient-to-br from-[#1456a8] to-[#3a8dde] text-white border-none cursor-pointer px-4 py-2 rounded-full font-rajdhani text-[0.8rem] font-bold tracking-widest uppercase transition-all duration-200 hover:shadow-[0_0_15px_rgba(58,141,222,0.4)] hover:-translate-y-px"
-          >
-            Get Quote
-          </button>
-
           <a
             href="/product-catalogue.pdf"
             download="Tuberra_Product_Catalogue.pdf"
-            className="ml-2 flex items-center justify-center gap-2 bg-gradient-to-br from-[#1456a8] to-[#3a8dde] text-white border-none cursor-pointer px-4 py-2 rounded-full font-rajdhani text-[0.8rem] font-bold tracking-widest uppercase transition-all duration-200 hover:shadow-[0_0_15px_rgba(58,141,222,0.4)] hover:-translate-y-px no-underline"
+            className="ml-3 flex items-center justify-center gap-2 bg-gradient-to-br from-[#1456a8] to-[#3a8dde] text-white border-none cursor-pointer px-6 py-2 rounded-full font-rajdhani text-[0.8rem] font-bold tracking-widest uppercase transition-all duration-200 hover:shadow-[0_0_15px_rgba(58,141,222,0.4)] hover:-translate-y-px no-underline"
           >
             <Download size={14} />
-            <span>Catalogue</span>
+            <span>Download Catalogue</span>
           </a>
         </div>
       </nav>
