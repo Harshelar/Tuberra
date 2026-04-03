@@ -49,40 +49,24 @@ const FerruleFittings = () => {
           >
             <div>
               <h2 className="text-2xl font-bebas text-white mb-4">Description</h2>
-              <p className="text-silver leading-relaxed">
-                Leading Ferrule Fitting Manufacturer in India committed to delivering top-quality products adhering to highest industry standards. Comprehensive range designed for extreme conditions ideal for construction, automotive, marine, and industrial applications.
-              </p>
+              <div className="text-silver leading-relaxed">
+                <span className="block mt-1">We provide precision-engineered ferrule fittings designed for leak-proof and vibration-resistant performance in instrumentation and fluid control systems. These fittings ensure high reliability in critical applications.</span>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types</h3>
-              <p className="text-silver">Union Tee, Female Tee, Branch Tee, Run Tee, Male Connector, Female Connector, Elbow, Bulk Head Union, Reducing Union, OD Cap, OD Plug</p>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Single Ferrule Fittings</li><li>•	Double Ferrule Fittings</li><li>•	Tube Fittings</li><li>•	Compression Fittings</li><li>•	Needle Valves</li><li>•	Ball Valves</li><li>•	Manifold Valves</li></ul>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
-              <ul className="text-silver space-y-1">
-                <li>• Size: Ø3mm to 200mm</li>
-                <li>• Standards: IS1364, ISO 4014, ISO 4017, DIN 933, DIN 931, ASME B18.2.1</li>
-                <li>• Thread Configuration: ASME B1.1 (Inch), B1.13M (Metric)</li>
-                <li>• Coatings: Zinc Plated, Hot-Dip Galvanized, Black Oxide, Phosphate Coated, Plain</li>
-              </ul>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Size Range: 1/16” to 2”</li><li>•	Pressure Rating: Up to 10,000 PSI</li><li>•	Connection Type: Tube / Threaded</li><li>•	Standards: ASTM / ASME</li></ul><span className="block mt-1">4) Grades & Materials</span><span className="text-white font-semibold block mt-3 mb-1">Stainless Steel</span><span className="text-white font-semibold block mt-3 mb-1">SS 304, 304L, 316, 316L, 310, 310S, 321, 321H, 347, 347H, 904L</span><span className="block mt-1">Duplex 2205, 2304, Super Duplex 2507, Zeron 100</span><span className="text-white font-semibold block mt-3 mb-1">254 SMO, AL-6XN</span><span className="block mt-1">17-4 PH, 15-5 PH, 13-8 Mo</span><span className="text-white font-semibold block mt-3 mb-1">Carbon Steel</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A106 Gr A/B/C, ASTM A53 Gr A/B</span><span className="text-white font-semibold block mt-3 mb-1">API 5L Gr B, X42, X52, X60, X65, X70</span><span className="text-white font-semibold block mt-3 mb-1">Alloy Steel (Chrome-Moly)</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A335 P5, P9, P11, P22, P91, P92</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A213 T5, T9, T11, T22, T91</span><span className="text-white font-semibold block mt-3 mb-1">Nickel & Special Alloys</span><span className="text-white font-semibold block mt-3 mb-1">Nickel 200, 201</span><span className="text-white font-semibold block mt-3 mb-1">Monel 400, K500</span><span className="text-white font-semibold block mt-3 mb-1">Inconel 600, 601, 625, 718</span><span className="text-white font-semibold block mt-3 mb-1">Hastelloy C276, C22, B2</span><span className="text-white font-semibold block mt-3 mb-1">Titanium Grade 2, Grade 5</span><span className="text-white font-semibold block mt-3 mb-1">Cupronickel 90/10, 70/30</span><span className="block mt-1">5) Applications</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Oil & Gas Industry</li><li>•	Petrochemical Plants</li><li>•	Power Generation</li><li>•	Marine & Offshore</li><li>•	Chemical Processing</li><li>•	Heat Exchangers & Boilers</li><li>•	Construction & Infrastructure</li><li>•	Heavy Engineering</li></ul>
+              </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
-              <p className="text-silver">
-                Stainless Steel: 304, 304L, 304H, 309S, 310S, 316, 316Ti, 316L, 317, 321, 347, 409, 410, 420, 430, 440, 446, 904L<br/>
-                Other Grades: 17-4 PH, 15.5PH, 4122<br/>
-                Duplex Steel, Alloy Steel<br/>
-                Copper Nickel, Monel, Inconel, Hastelloy
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
-              <p className="text-silver">Construction, Automotive, Aerospace, Industrial Machinery, Marine</p>
-            </div>
+          
+          
           </motion.div>
         </div>
       </div>

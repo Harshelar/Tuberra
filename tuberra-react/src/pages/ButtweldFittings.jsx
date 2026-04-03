@@ -49,40 +49,18 @@ const ButtweldFittings = () => {
           >
             <div>
               <h2 className="text-2xl font-bebas text-white mb-4">Description</h2>
-              <p className="text-silver leading-relaxed">
-                Leading Buttweld Fittings Manufacturer in India providing precision-engineered solutions for diverse industries. Commitment to quality ensures each fitting meets highest standards with durability and reliability for extreme conditions.
-              </p>
+              <div className="text-silver leading-relaxed">
+                <span className="block mt-1">Our buttweld fittings are designed for seamless integration into piping systems, ensuring smooth flow, reduced pressure loss, and long service life. These fittings are widely used in high-pressure and high-temperature applications.</span><span className="block mt-1">2 )Types of Fittings</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Elbows (45°, 90°, 180° – Long Radius / Short Radius)</li><li>•	Tees (Equal & Reducing)</li><li>•	Reducers (Concentric & Eccentric)</li><li>•	Crosses</li><li>•	Stub Ends (Long / Short Pattern)</li><li>•	Pipe Bends (Hot Induction / Cold Formed)</li><li>•	End Caps</li></ul>
+              </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types</h3>
-              <p className="text-silver">90° Elbow, Concentric Reducer, Eccentric Reducer, Bends, Equal Tee, Unequal Tee, Cross, Stub-End, Cap, U-Bend, Lateral Tee</p>
-            </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
-              <ul className="text-silver space-y-1">
-                <li>• Size: 1/2" to 48" (DN15 to DN1200)</li>
-                <li>• Standards: ASME B16.9, ASME B16.28, MSS SP-43, DIN 2605, EN 10253</li>
-                <li>• Wall Thickness: SCH-5 to SCH-160/XXS</li>
-                <li>• Specification: ASTM A403/ASME SA403</li>
-              </ul>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: ASTM A234, A403, A420, MSS SP-75</li><li>•	Size Range: ½” NB to 48” NB</li><li>•	Wall Thickness: SCH 10 to SCH XXS</li><li>•	Forming: Seamless / Welded</li><li>•	Testing: Hydrostatic, NDT, PMI (on request)</li></ul><span className="block mt-1">4) Grades & Materials</span><ul className="text-silver space-y-1 list-none pl-0"><li>-Stainless Steel</li></ul><span className="text-white font-semibold block mt-3 mb-1">ASTM A403 WP304 / WP304L</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A403 WP316 / WP316L</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A403 WP310 / WP310S</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A403 WP321 / WP321H</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A403 WP347 / WP347H</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A403 WP904</span><ul className="text-silver space-y-1 list-none pl-0"><li>-Carbon Steel</li></ul><span className="block mt-1">ASTM A106 Gr A/B/C,</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A53 Gr A/B</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A234 WPB</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A234 WPC</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A420 WPL6</span><ul className="text-silver space-y-1 list-none pl-0"><li>-DUPLEX / SUPER DUPLEX</li></ul><span className="block mt-1">ASTM A815 UNS S31803 / S32205 (Duplex 2205)</span><span className="block mt-1">ASTM A815 UNS S32750 (Super Duplex 2507)</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A815 UNS S32760 (Zeron 100)</span><ul className="text-silver space-y-1 list-none pl-0"><li>-Alloy Steel (Chrome-Moly)</li></ul><span className="text-white font-semibold block mt-3 mb-1">ASTM A335 P5, P9, P11, P22, P91, P92</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A213 T5, T9, T11, T22, T91</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A234 WP5, WP9,WP11, WP22, WP91</span><ul className="text-silver space-y-1 list-none pl-0"><li>-NICKEL & HIGH ALLOYS</li></ul><span className="text-white font-semibold block mt-3 mb-1">ASTM B366 (Inconel 600 / 625 / 718)</span><span className="text-white font-semibold block mt-3 mb-1">ASTM B366 (Monel 400 / K500)</span><span className="text-white font-semibold block mt-3 mb-1">ASTM B366 (Hastelloy C276 / C22 / B2)</span><ul className="text-silver space-y-1 list-none pl-0"><li>-TITANIUM</li></ul><span className="text-white font-semibold block mt-3 mb-1">ASTM B363 Gr 2</span><span className="text-white font-semibold block mt-3 mb-1">ASTM B363 Gr 5</span><ul className="text-silver space-y-1 list-none pl-0"><li>-CUPRONICKEL</li></ul><span className="text-white font-semibold block mt-3 mb-1">ASTM B466 / B467 (Cu-Ni 90/10, 70/30)</span><span className="block mt-1">5) Applications</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Oil & Gas Industry</li><li>•	Petrochemical Plants</li><li>•	Power Generation</li><li>•	Marine & Offshore</li><li>•	Chemical Processing</li><li>•	Heat Exchangers & Boilers</li><li>•	Construction & Infrastructure</li><li>•	Heavy Engineering</li></ul>
+              </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
-              <p className="text-silver">
-                Stainless Steel: 304, 304L, 304H, 309, 310, 316, 316TI, 316L, 317, 317L, 321, 347, 904L<br/>
-                Carbon Steel: ASTM A234 WPB, IS 1239 Part II<br/>
-                Duplex Steel, Alloy Steel<br/>
-                Copper Nickel, Monel, Inconel, Hastelloy, Brass, Aluminium, SMO 254
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
-              <p className="text-silver">Automotive, Oil & Gas, Pulp & Paper, Construction, Pharmaceuticals, Refining</p>
-            </div>
+          
+          
           </motion.div>
         </div>
       </div>

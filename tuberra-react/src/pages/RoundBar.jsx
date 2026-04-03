@@ -49,44 +49,18 @@ const RoundBar = () => {
           >
             <div>
               <h2 className="text-2xl font-bebas text-white mb-4">Description</h2>
-              <p className="text-silver leading-relaxed">
-                Trusted Round Bar Manufacturer in India, providing high-quality round bars for diverse industrial applications with superior durability and strength. Known for corrosion resistance and long-lasting reliability.
-              </p>
+              <div className="text-silver leading-relaxed">
+                <span className="block mt-1">We supply a wide range of high-quality round bars manufactured to international standards, offering excellent strength, durability, corrosion resistance, and machinability. Our round bars are suitable for critical engineering, structural, and industrial applications across multiple sectors.</span><span className="block mt-1">Available in a variety of materials and finishes, our bars ensure consistent performance in demanding environments.</span>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types</h3>
-              <p className="text-silver">Round, Square, Hexagonal, Rectangular Bars</p>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>* Bright Bars</li><li>* Black Bars</li><li>* Forged Bars</li><li>* Rolled Bars</li><li>* Peeled Bar</li><li>* Polished Bars</li><li>* Ground Bars</li></ul><span className="block mt-1">3) Specifications</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: ASTM, ASME, EN, DIN, IS</li><li>•	Diameter Range: 5mm to 500mm</li><li>•	Length: 3m / 6m / Custom Cut Length</li><li>•	Form: Round</li><li>•	Finish: Black / Bright / Polished / Rough Turned / Peeled</li><li>•	Tolerance: H8 / H9 / As per requirement</li><li>•	Heat Treatment: Annealed / Normalized / Quenched & Tempere</li></ul><span className="block mt-1">4) Grades & Materials</span><span className="text-white font-semibold block mt-3 mb-1">Stainless Steel (ASTM A276 / A479)</span><span className="text-white font-semibold block mt-3 mb-1">SS 304, 304L</span><span className="text-white font-semibold block mt-3 mb-1">SS 316, 316L</span><span className="text-white font-semibold block mt-3 mb-1">SS 310, 310S</span><span className="text-white font-semibold block mt-3 mb-1">SS 321, 321H</span><span className="text-white font-semibold block mt-3 mb-1">SS 347, 347H</span><span className="text-white font-semibold block mt-3 mb-1">SS 904L</span><span className="block mt-1">17-4 PH, 15-5 PH, 13-8 Mo</span><span className="text-white font-semibold block mt-3 mb-1">Carbon Steel (ASTM A36 / A105 / A108)</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A36</span><span className="text-white font-semibold block mt-3 mb-1">EN8 / C45</span><span className="text-white font-semibold block mt-3 mb-1">SAE 1018 / 1020 / 1045</span><span className="text-white font-semibold block mt-3 mb-1">Alloy Steel (Chrome-Moly)</span><span className="text-white font-semibold block mt-3 mb-1">(ASTM A182 / A29)</span><span className="text-white font-semibold block mt-3 mb-1">EN19</span><span className="text-white font-semibold block mt-3 mb-1">EN24</span><span className="text-white font-semibold block mt-3 mb-1">EN41</span><span className="text-white font-semibold block mt-3 mb-1">EN353</span><span className="text-white font-semibold block mt-3 mb-1">AISI 4130</span><span className="text-white font-semibold block mt-3 mb-1">AISI 4140</span><span className="text-white font-semibold block mt-3 mb-1">AISI 4340</span><span className="text-white font-semibold block mt-3 mb-1">Duplex & Super Duplex (ASTM A276)</span><span className="text-white font-semibold block mt-3 mb-1">Duplex 2205 (S31803 / S32205)</span><span className="text-white font-semibold block mt-3 mb-1">Super Duplex 2507 (S32750)</span><span className="text-white font-semibold block mt-3 mb-1">Nickel & Special Alloys</span><span className="text-white font-semibold block mt-3 mb-1">(ASTM B160 / B164 / B574)</span><span className="text-white font-semibold block mt-3 mb-1">Nickel 200, 201</span><span className="text-white font-semibold block mt-3 mb-1">Monel 400, K500</span><span className="text-white font-semibold block mt-3 mb-1">Inconel 600, 601, 625, 718</span><span className="text-white font-semibold block mt-3 mb-1">Hastelloy C276, C22, B2</span><span className="text-white font-semibold block mt-3 mb-1">Titanium (ASTM B348)  Grade 2, Grade 5</span><span className="text-white font-semibold block mt-3 mb-1">Cupronickel  (ASTM B151 )</span><span className="block mt-1">90/10, 70/30</span><span className="block mt-1">5) Applications</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Oil & Gas Industry</li><li>•	Petrochemical Plants</li><li>•	Power Generation</li><li>•	Marine & Offshore</li><li>•	Chemical Processing</li><li>•	Heat Exchangers & Boilers</li><li>•	Construction & Infrastructure</li><li>•	Heavy Engineering</li></ul>
+              </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
-              <ul className="text-silver space-y-1">
-                <li>• Size: 5mm to 500mm dia</li>
-                <li>• Length: 500mm to 6000mm (cut-to-size available)</li>
-                <li>• Forms: Round, Square, Hex (A/F), Rectangle, Flat</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
-              <p className="text-silver">
-                Stainless Steel: 304, 304L, 304H, 309S, 310S, 316, 316Ti, 316L, 317, 321, 347, 409, 410, 420, 430, 440, 446, 904L<br/>
-                Other Grades: 17-4 PH, 15.5PH, 4122<br/>
-                Carbon Steel, Duplex Steel, Alloy Steel<br/>
-                Copper Nickel, Monel, Inconel, Hastelloy, Titanium
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Finishes</h3>
-              <p className="text-silver">Black, Bright Polished, Rough Turned, NO.4, Matt, BA</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
-              <p className="text-silver">Automotive, Oil & Gas, Pulp & Paper, Construction, Pharmaceuticals, Refining</p>
-            </div>
+          
+          
           </motion.div>
         </div>
       </div>

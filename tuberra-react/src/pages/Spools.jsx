@@ -49,38 +49,24 @@ const Spools = () => {
           >
             <div>
               <h2 className="text-2xl font-bebas text-white mb-4">Description</h2>
-              <p className="text-silver leading-relaxed">
-                Leading Spools Manufacturer in India committed to delivering top-quality spools tailored to meet diverse requirements. Focus on precision, durability, and reliability designed for oil & gas, petrochemical, power plants, and industrial piping systems.
-              </p>
+              <div className="text-silver leading-relaxed">
+                <span className="block mt-1">We specialize in the supply and fabrication of pipe spools designed as per client drawings and specifications. Pipe spools are pre-assembled piping sections that reduce installation time and ensure precision on-site.</span>
+              </div>
             </div>
-
             <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types</h3>
-              <p className="text-silver">Pipe Spools, Piping Spools, Prefabricated Spools, Custom Spools, Flanged Spools</p>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Scope Of Supply</h3>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Cut-to-length Pipes</li><li>•	Welded Assemblies</li><li>•	Flanged Spools</li><li>•	Valves & Fittings Integration</li><li>•	Pre-fabricated Modules</li></ul>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
-              <ul className="text-silver space-y-1">
-                <li>• Spool Length: Up to 12 meters (custom sizes available)</li>
-                <li>• Surface Coating: Galvanized, Epoxy Coated, PTFE Coated, Painted, Powder Coated</li>
-                <li>• Connection Type: Butt Weld, Flanged, Threaded, Socket Weld</li>
-              </ul>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: ASME B31.3, B31.1</li><li>•	Size Range: As per project requirement</li><li>•	Fabrication: Shop-fabricated / Site-ready</li><li>•	Testing: Hydrotest, Radiography, PMI, NDT</li><li>•	Surface Treatment: Painting, Coating, Galvanizing</li></ul><span className="block mt-1">4) Grades & Materials</span><span className="text-white font-semibold block mt-3 mb-1">Stainless Steel</span><span className="text-white font-semibold block mt-3 mb-1">SS 304, 304L, 316, 316L, 310, 310S, 321, 321H, 347, 347H, 904L</span><span className="block mt-1">Duplex 2205, 2304, Super Duplex 2507, Zeron 100</span><span className="text-white font-semibold block mt-3 mb-1">254 SMO, AL-6XN</span><span className="block mt-1">17-4 PH, 15-5 PH, 13-8 Mo</span><span className="text-white font-semibold block mt-3 mb-1">Carbon Steel</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A106 Gr A/B/C, ASTM A53 Gr A/B</span><span className="text-white font-semibold block mt-3 mb-1">API 5L Gr B, X42, X52, X60, X65, X70</span><span className="text-white font-semibold block mt-3 mb-1">Alloy Steel (Chrome-Moly)</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A335 P5, P9, P11, P22, P91, P92</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A213 T5, T9, T11, T22, T91</span><span className="text-white font-semibold block mt-3 mb-1">Nickel & Special Alloys</span><span className="text-white font-semibold block mt-3 mb-1">Nickel 200, 201</span><span className="text-white font-semibold block mt-3 mb-1">Monel 400, K500</span><span className="text-white font-semibold block mt-3 mb-1">Inconel 600, 601, 625, 718</span><span className="text-white font-semibold block mt-3 mb-1">Hastelloy C276, C22, B2</span><span className="text-white font-semibold block mt-3 mb-1">Titanium Grade 2, Grade 5</span><span className="text-white font-semibold block mt-3 mb-1">Cupronickel 90/10, 70/30</span><span className="block mt-1">5) Applications</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Oil & Gas Industry</li><li>•	Petrochemical Plants</li><li>•	Power Generation</li><li>•	Marine & Offshore</li><li>•	Chemical Processing</li><li>•	Heat Exchangers & Boilers</li><li>•	Construction & Infrastructure</li><li>•	Heavy Engineering</li></ul>
+              </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
-              <p className="text-silver">
-                Stainless Steel: 304, 304L, 304H, 309, 310, 316, 316Ti, 316H, 316L, 317, 317L, 321, 347, 904L<br/>
-                Duplex Steel: F51, F53, F55<br/>
-                Alloy Steel, Copper Nickel, Monel, Inconel, Hastelloy, Titanium, Brass, Aluminium, SMO 254
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
-              <p className="text-silver">Automotive, Oil & Gas, Pulp & Paper, Construction, Pharmaceuticals, Refining</p>
-            </div>
+          
+          
           </motion.div>
         </div>
       </div>

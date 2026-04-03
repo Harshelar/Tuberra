@@ -53,46 +53,36 @@ const Fasteners = () => {
           >
             <div>
               <h2 className="text-2xl font-bebas text-white mb-4">Description</h2>
-              <p className="text-silver leading-relaxed">
-                Dinmani Pipes & Fittings is a leading Fastener Manufacturer in India, committed to delivering top-quality fasteners tailored to meet diverse requirements. Products adhere to highest industry standards for precision, durability, and reliability.
-              </p>
+              <div className="text-silver leading-relaxed">
+                <span className="block mt-1">We supply a comprehensive range of industrial fasteners engineered for high strength, durability, and corrosion resistance. Our fasteners are manufactured as per international standards and are suitable for critical applications in high-pressure and high-temperature environments.</span>
+              </div>
             </div>
-
             <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types</h3>
-              <p className="text-silver">Bolts, Nuts, Screws, Washers, Studs, Hex Bolts, Spring Washers, Half Threaded Bolts, U Clamps, Lock Nuts, Eye Bolts</p>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types Of Fasteners</h3>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Bolts (Hex Bolts, Heavy Hex Bolts)</li><li>•	Stud Bolts (Full Thread / Double End)</li><li>•	Nuts (Hex Nuts, Heavy Hex Nuts, Lock Nuts)</li><li>•	Screws (Machine Screws, Self-Tapping Screws)</li><li>•	Washers (Flat, Spring, Plain)</li><li>•	Anchor Bolts</li><li>•	U-Bolts</li><li>•	Eye Bolts</li></ul>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
-              <ul className="text-silver space-y-1">
-                <li>• Length: 3mm to 200mm</li>
-                <li>• Thread: UNF, BSW, BSF, METRIC, UNC</li>
-                <li>• Standards: IS1364, ISO 4014, ISO 4017, DIN 933, DIN 931, BS 1083, ASME B18.2.1, JIS B1180</li>
-                <li>• Production: M24-M100 (hot forging), M2-M24 (cold forging), CNC machining</li>
-              </ul>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: ASTM A193, A194, A307, A320, A325, A490, DIN, ISO</li><li>•	Size Range: M6 to M100 / ¼” to 4”</li><li>•	Length: Custom as per requirement</li><li>•	Thread Type: Metric / UNC / UNF / BSW / BSF</li><li>•	Coating: Black, Zinc Plated, Hot Dip Galvanized, PTFE</li></ul>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
-              <p className="text-silver">
-                Stainless Steel: 304, 304L, 304H, 309, 310, 316, 316Ti, 316L, 317, 317L, 321, 347, 904L<br/>
-                Carbon Steel: 8.8, 10.9, 12.9<br/>
-                Duplex Steel: F51, F53, F55<br/>
-                Alloy Steel: F5, F9, F11, F21, F22, F91<br/>
-                Copper Nickel, Monel, Inconel, Hastelloy, Titanium, Brass, Aluminium
-              </p>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Stainless Steel (304, 316, 316L, etc.)</li><li>•	Carbon Steel (A307, A325, A490)</li><li>•	Alloy Steel (A193 B7, B16)</li><li>•	Duplex & Super Duplex</li><li>•	Nickel Alloys (Monel, Inconel, Hastelloy)</li><li>•	Titanium</li></ul>
+              </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Coatings</h3>
-              <p className="text-silver">Zinc, Hot Dip Galvanizing, Cadmium, PTFE, Phosphate, Xylon, Dacromet, Nickel-plated, Black Oxide</p>
-            </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
-              <p className="text-silver">Automotive, Oil & Gas, Pulp & Paper, Construction, Pharmaceuticals, Refining</p>
+              <div className="text-silver">
+                <span className="block mt-1">Oil & Gas, Refineries, Power Plants, Structural Steel, Construction, Heavy Engineering</span>
+              </div>
             </div>
+          
+          
           </motion.div>
         </div>
       </div>

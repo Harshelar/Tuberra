@@ -49,39 +49,36 @@ const Valves = () => {
           >
             <div>
               <h2 className="text-2xl font-bebas text-white mb-4">Description</h2>
-              <p className="text-silver leading-relaxed">
-                Reliable Valves Manufacturer in India delivering top-quality valves serving broad spectrum of industrial needs. Products comply with strict industry standards ensuring exceptional durability, robustness, and efficiency.
-              </p>
+              <div className="text-silver leading-relaxed">
+                <span className="block mt-1">We offer a wide range of industrial valves designed for precise flow control, isolation, and regulation in piping systems. Our valves are built for reliability, durability, and performance in critical environments.</span>
+              </div>
             </div>
-
             <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types</h3>
-              <p className="text-silver">Butterfly, Globe, Gate, Ball, Check, Needle, Plug, Non-return, High Pressure</p>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types Of Valves</h3>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Ball Valves</li><li>•	Gate Valves</li><li>•	Globe Valves</li><li>•	Check Valves</li><li>•	Butterfly Valves</li><li>•	Needle Valves</li><li>•	Plug Valves</li><li>•	Control Valves</li></ul>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
-              <ul className="text-silver space-y-1">
-                <li>• Size: ½" to 48" (DN15 to DN1200)</li>
-                <li>• Standards: ASTM/ASME B16.34, API 598, API 6D, API 600, API 602, BS EN 593</li>
-                <li>• End Connection: Flanged, Threaded, Butt Weld, Socket Weld, Grooved</li>
-                <li>• Coatings: PTFE, Epoxy, Galvanized, Black Oxide, Phosphate, Electropolished</li>
-              </ul>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: API, ASTM, ASME, DIN</li><li>•	Size Range: ½” to 48”</li><li>•	Pressure Class: 150# to 2500#</li><li>•	Operation: Manual / Gear / Pneumatic / Electric</li><li>•	End Connection: Flanged / Threaded / Socket Weld / Butt Weld</li></ul>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
-              <p className="text-silver">
-                Stainless Steel: 304, 304L, 316, 316L, 321, 347<br/>
-                Carbon Steel: A105, A216 WCB, A350 LF2<br/>
-                Alloy Steel: A182 F5, F9, F11, F22
-              </p>
+              <div className="text-silver">
+                <span className="block mt-1">Stainless Steel, Carbon Steel, Alloy Steel, Duplex, Nickel Alloys, Titanium</span>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
-              <p className="text-silver">Oil & Gas, Petrochemical, Power Plants, Water Treatment, Marine, HVAC, Chemical, Food & Beverage, Pharmaceuticals</p>
+              <div className="text-silver">
+                <span className="block mt-1">Oil & Gas, Water Treatment, Power Plants, Chemical Industry, Marine</span>
+              </div>
             </div>
+          
+          
           </motion.div>
         </div>
       </div>

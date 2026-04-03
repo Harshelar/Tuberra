@@ -49,41 +49,24 @@ const SheetPlateCoils = () => {
           >
             <div>
               <h2 className="text-2xl font-bebas text-white mb-4">Description</h2>
-              <p className="text-silver leading-relaxed">
-                Trusted Sheet, Plate & Coils Manufacturer in India specializing in premium-quality products catering to wide range of industrial applications. Commitment to excellence ensures each product meets stringent quality standards with superior durability and strength.
-              </p>
+              <div className="text-silver leading-relaxed">
+                <span className="block mt-1">We supply a comprehensive range of high-quality sheets, coils, and plates manufactured to international standards. Our materials offer excellent strength, corrosion resistance, and dimensional accuracy, making them suitable for fabrication, structural, and high-performance industrial applications.</span><span className="block mt-1">Available in multiple finishes, thicknesses, and grades, our products cater to both standard and specialized requirements.</span>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types</h3>
-              <p className="text-silver">Sheet, Plate, Coils</p>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Sheets</li><li>•	Plates</li><li>•	Coils</li><li>•	Chequered Plates</li><li>•	Perforated Sheets</li><li>•	Shim Sheets</li><li>•	Hot Rolled (HR)</li><li>•	Cold Rolled (CR)</li></ul>
+              </div>
             </div>
-
             <div>
               <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
-              <ul className="text-silver space-y-1">
-                <li>• Thickness: 4mm-100mm</li>
-                <li>• Width: 1000mm, 1219mm, 1500mm, 1800mm, 2000mm, 2500mm, 3000mm, 3500mm</li>
-                <li>• Length: 2000mm, 2440mm, 3000mm, 5800mm, 6000mm</li>
-                <li>• Surface: 2B, 2D, BA, NO.1, NO.4, NO.8, 8K, mirror, checkered, embossed, hair line, sand blast, brush, etching</li>
-                <li>• Forms: Coils, Foils, Rolls, Plain Sheet, Shim Sheet, Perforated Sheet, Chequered Plate, Strip, Flats, Blanks, Rings</li>
-              </ul>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: ASTM / ASME / EN / DIN / IS</li><li>•	Thickness Range: 0.3 mm to 100 mm+</li><li>•	Width: Up to 2500 mm</li><li>•	Length: Standard / Cut-to-size</li><li>•	Finish (SS): 2B, BA, No.1, No.4, Mirror Finish</li><li>•	Edge: Mill Edge / Slit Edge</li><li>•	Processing: Cutting, Slitting, Bending, Polishing</li></ul><span className="block mt-1">4) Grades & Materials</span><span className="text-white font-semibold block mt-3 mb-1">Stainless Steel (ASTM A240)</span><span className="text-white font-semibold block mt-3 mb-1">SS 304, 304L</span><span className="text-white font-semibold block mt-3 mb-1">SS 316, 316L</span><span className="text-white font-semibold block mt-3 mb-1">SS 310, 310S</span><span className="text-white font-semibold block mt-3 mb-1">SS 321, 321H</span><span className="text-white font-semibold block mt-3 mb-1">SS 347, 347H</span><span className="text-white font-semibold block mt-3 mb-1">SS 904L</span><span className="text-white font-semibold block mt-3 mb-1">Duplex 2205, 2304</span><span className="text-white font-semibold block mt-3 mb-1">Super Duplex 2507, Zeron 100</span><span className="text-white font-semibold block mt-3 mb-1">254 SMO, AL-6XN</span><span className="text-white font-semibold block mt-3 mb-1">Carbon Steel (ASTM A36 / A516 / A283)</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A36</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A283 Gr C</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A516 Gr 60 / 65 / 70</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A572 Gr 50</span><span className="text-white font-semibold block mt-3 mb-1">IS 2062 E250 / E350</span><span className="text-white font-semibold block mt-3 mb-1">Alloy Steel (ASTM A387)</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A387 Gr 5</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A387 Gr 9</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A387 Gr 11</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A387 Gr 22</span><span className="text-white font-semibold block mt-3 mb-1">ASTM A387 Gr 91</span><span className="text-white font-semibold block mt-3 mb-1">Duplex / Super Duplex (ASTM A240)</span><span className="text-white font-semibold block mt-3 mb-1">UNS S31803 / S32205 (Duplex 2205)</span><span className="text-white font-semibold block mt-3 mb-1">UNS S32750 (Super Duplex 2507)</span><span className="text-white font-semibold block mt-3 mb-1">UNS S32760 (Zeron 100)</span><span className="block mt-1">Nickel & Special Alloys (ASTM B168 / B443 / B575)</span><span className="text-white font-semibold block mt-3 mb-1">Nickel 200 / 201</span><span className="text-white font-semibold block mt-3 mb-1">Monel 400 / K500</span><span className="text-white font-semibold block mt-3 mb-1">Inconel 600 / 601 / 625 / 718</span><span className="text-white font-semibold block mt-3 mb-1">Hastelloy C276 / C22 / B2</span><span className="text-white font-semibold block mt-3 mb-1">Titanium (ASTM B265) Grade 2, Grade 5</span><span className="text-white font-semibold block mt-3 mb-1">Cupronickel (ASTM B171)</span><span className="text-white font-semibold block mt-3 mb-1">Cu-Ni 90/10</span><span className="text-white font-semibold block mt-3 mb-1">Cu-Ni 70/30</span><span className="block mt-1">5) Applications</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Oil & Gas Industry</li><li>•	Petrochemical Plants</li><li>•	Power Generation</li><li>•	Marine & Offshore</li><li>•	Chemical Processing</li><li>•	Heat Exchangers & Boilers</li><li>•	Construction & Infrastructure</li><li>•	Heavy Engineering</li></ul>
+              </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Finishes</h3>
-              <p className="text-silver">Hot Rolled (HR), Cold Rolled (CR), 2B, 2D, BA, NO(8), SATIN</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Grades & Materials</h3>
-              <p className="text-silver">Brass, Aluminium, SMO 254</p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
-              <p className="text-silver">Automotive, Oil & Gas, Pulp & Paper, Construction, Pharmaceuticals, Refining</p>
-            </div>
+          
+          
           </motion.div>
         </div>
       </div>

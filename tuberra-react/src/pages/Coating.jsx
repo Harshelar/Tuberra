@@ -49,25 +49,30 @@ const Coating = () => {
           >
             <div>
               <h2 className="text-2xl font-bebas text-white mb-4">Description</h2>
-              <p className="text-silver leading-relaxed">
-                Leading Coating Manufacturer in India specializing in high-performance coatings engineered to meet stringent demands. Comprehensive range designed for oil & gas, petrochemical, power plants, and industrial piping systems delivering exceptional strength and corrosion resistance.
-              </p>
+              <div className="text-silver leading-relaxed">
+                <span className="block mt-1">We supply high-performance gaskets designed to provide leak-proof sealing between flanged joints under varying pressure and temperature conditions. Our gaskets ensure reliability and long service life.</span>
+              </div>
             </div>
-
             <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types</h3>
-              <p className="text-silver">Epoxy Coating, 3LPE Coating, Hot Dip Galvanizing, PTFE Coating, Powder Coating, Painted Coating, Fusion Bonded Epoxy Coating</p>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Types Of Gaskets</h3>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Spiral Wound Gaskets</li><li>•	Ring Type Joint (RTJ) Gaskets</li><li>•	Soft Gaskets (Non-Metallic)</li><li>•	Metal Jacketed Gaskets</li><li>•	CAF / CNAF Gaskets</li><li>•	PTFE Gaskets</li><li>•	Graphite Gaskets</li></ul>
+              </div>
             </div>
-
             <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications Available</h3>
-              <p className="text-silver">Pipe Coating, Piping Coating, Custom Coating, Prefabricated Coating</p>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Specifications</h3>
+              <div className="text-silver">
+                <ul className="text-silver space-y-1 list-none pl-0"><li>•	Standards: ASME B16.20, B16.21, API</li><li>•	Size Range: ½” to 60”</li><li>•	Class: 150# to 2500#</li><li>•	Filler Materials: Graphite, PTFE, Ceramic</li></ul><span className="text-white font-semibold block mt-3 mb-1">Materials</span><ul className="text-silver space-y-1 list-none pl-0"><li>•	Stainless Steel</li><li>•	Carbon Steel</li><li>•	Alloy Steel</li><li>•	PTFE / Graphite / Rubber</li></ul>
+              </div>
             </div>
-
             <div>
-              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Key Applications Industries</h3>
-              <p className="text-silver">Automotive, Oil & Gas, Pulp & Paper, Construction, Pharmaceuticals, Refining</p>
+              <h3 className="text-xl font-bebas text-[#3a8dde] mb-3">Applications</h3>
+              <div className="text-silver">
+                <span className="block mt-1">Flanged joints in Oil & Gas, Refineries, Chemical Plants, Power Generation</span>
+              </div>
             </div>
+          
+          
           </motion.div>
         </div>
       </div>
