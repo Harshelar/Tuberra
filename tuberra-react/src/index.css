@@ -67,3 +67,34 @@ body {
   animation: pulse-glow 8s ease-in-out infinite;
   will-change: auto; /* Avoid permanently keeping in VRAM if not needed, but pulse uses it */
 }
+
+/* Hide Google Translate completely ugly banner if injected */
+.goog-te-banner-frame.skiptranslate, 
+.goog-te-banner-frame,
+.goog-te-gadget-icon,
+.goog-tooltip,
+.goog-tooltip:hover,
+#goog-gt-tt,
+.skiptranslate iframe,
+.VIpgJd-ZVi9od-ORHb-OEVmcd,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+  display: none !important;
+  visibility: hidden !important;
+}
+body {
+  top: 0px !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Hide the actual google translate widget container that generates the white box */
+#google_translate_element {
+  position: absolute !important;
+  opacity: 0 !important;
+  z-index: -100 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}

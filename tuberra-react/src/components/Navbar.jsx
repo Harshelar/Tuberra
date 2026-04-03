@@ -1,26 +1,73 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X, ChevronDown, Download } from 'lucide-react';
+import { Search, X, ChevronDown, Download, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const productsList = [
-  "Pipes & Tubes", "Buttweld Fittings", "Flanges", "Forged Fittings", 
-  "Fasteners", "Olets", "Gaskets", "Valves", "Round Bar", 
-  "Sheet, Plate & Coils", "Ferrule Fittings", "Spools", "PPR Pipes & Fittings"
+  "Pipes & Tubes", "Buttweld Fittings", "Flanges", "Forged Fittings",
+  "Fasteners", "Olets", "Gaskets", "Valves", "Round Bar",
+  "Sheet, Plate & Coils", "Ferrule Fittings", "Spools", "PPR Pipes & Fittings"  
+];
+
+const languagesList = [
+  { code: 'en', name: 'English' },
+  { code: 'it', name: 'Italian' },
+  { code: 'es', name: 'Spanish' },
+  { code: 'de', name: 'German' },
+  { code: 'id', name: 'Indonesian' },
+  { code: 'ar', name: 'Arabic' }
 ];
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isDropdownHovered, setIsDropdownHovered] = useState(false);
+  const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
 
   useEffect(() => {
+    // Add Google Translate script dynamically
+    if (!document.getElementById('google-translate-script')) {
+      const script = document.createElement('script');
+      script.id = 'google-translate-script';
+      script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      script.async = true;
+      document.body.appendChild(script);
+
+      window.googleTranslateElementInit = () => {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: 'en,it,es,de,id,ar',
+            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          },
+          'google_translate_element'
+        );
+      };
+    }
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const changeLanguage = (langCode) => {
+    setIsLangDropdownOpen(false);
+    
+    // Find the hidden Google Translate dropdown and trigger a change event
+    const select = document.querySelector('.goog-te-combo');
+    if (select) {
+      select.value = langCode;
+      select.dispatchEvent(new Event('change', { bubbles: true, cancelable: true }));
+    } else {
+      // Fallback if widget hasn't loaded yet
+      document.cookie = `googtrans=/en/${langCode}; path=/; domain=${window.location.hostname}`;
+      document.cookie = `googtrans=/en/${langCode}; path=/;`;
+      window.location.reload();
+    }
+  };
 
   return (
     <>
@@ -96,6 +143,51 @@ const Navbar = () => {
             <Download size={14} />
             <span>Download Catalogue</span>
           </a>
+        </div>
+
+        {/* Global Action elements (Translate + Mobile Actions) visible everywhere */}
+        <div className="flex items-center gap-2 ml-auto lg:ml-0 relative">
+          
+          {/* Hidden Google widget used for API purposes (Cannot use display:none/hidden or else Google won't render it) */}
+          <div id="google_translate_element" className="absolute opacity-0 -z-10 pointer-events-none w-0 h-0 overflow-hidden"></div>
+          
+          {/* Custom Beautiful Language Dropdown */}
+          <div className="relative">
+            <button
+              onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
+              className="bg-transparent border-none cursor-pointer text-gray-700 p-1 transition-colors hover:text-[#1456a8] flex items-center justify-center rounded-full mt-1 outline-none"
+            >
+              <Globe size={18} />
+            </button>
+            
+            <AnimatePresence>
+              {isLangDropdownOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-[calc(100%+10px)] right-0 bg-white/95 backdrop-blur-xl border border-gray-200 rounded-xl min-w-[140px] py-2 shadow-[0_20px_60px_rgba(0,0,0,0.15)] z-[100]"
+                >
+                  {languagesList.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => changeLanguage(lang.code)}
+                      className="w-full text-left bg-transparent border-none px-4 py-2 text-[0.85rem] font-semibold tracking-wide text-gray-700 hover:bg-gray-50 hover:text-[#1456a8] transition-colors cursor-pointer outline-none"
+                    >
+                      {lang.name}
+                    </button>
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+          <button
+            onClick={() => setIsSearchOpen(true)}
+            className="bg-transparent border-none cursor-pointer text-gray-700 p-1 transition-colors hover:text-[#1456a8] lg:hidden block mt-1"
+          >
+            <Search size={18} />
+          </button>
         </div>
       </nav>
 
