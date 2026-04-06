@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#040810] border-t border-[#1456a833] pt-16 px-6 lg:px-20 pb-8">
       <div className="max-w-[1400px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-10 lg:gap-16 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1.5fr] gap-10 lg:gap-16 mb-12">
           
           <div className="flex flex-col">
             <div className="font-bebas text-[2rem] tracking-[0.1em] text-white">Tuberra</div>
@@ -24,26 +24,16 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-[0.8rem] tracking-[0.2em] uppercase font-bold text-accent mb-4">Products</h4>
-            <ul className="flex flex-col gap-2.5">
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Pipes & Tubes</a></li>
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Buttweld Fittings</a></li>
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Flanges</a></li>
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Forged Fittings</a></li>
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Fasteners</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-[0.8rem] tracking-[0.2em] uppercase font-bold text-accent mb-4">More Products</h4>
-            <ul className="flex flex-col gap-2.5">
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Olets</a></li>
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Valves</a></li>
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Gaskets</a></li>
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Round Bar</a></li>
-              <li><a href="#products" className="text-[0.9rem] text-silver hover:text-white transition-colors">Spools</a></li>
-            </ul>
+          <div className="flex flex-col items-center text-center">
+            <h4 className="text-[0.8rem] tracking-[0.2em] uppercase font-bold text-accent mb-4">Chat on WhatsApp</h4>
+            <div className="flex flex-col items-center gap-4">
+              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+                <img src="/qr-code (1).png" alt="WhatsApp Business QR Code" className="w-[120px] h-[120px] rounded object-cover border border-[#1456a833]" />
+              </a>
+              <p className="text-[0.8rem] text-silver max-w-[200px]">
+                Scan to chat with us directly on our official WhatsApp business account.
+              </p>
+            </div>
           </div>
 
         </div>
