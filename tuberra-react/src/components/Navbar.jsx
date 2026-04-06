@@ -4,9 +4,18 @@ import { Search, X, ChevronDown, Download, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const productsList = [
-  "Pipes & Tubes", "Buttweld Fittings", "Flanges", "Forged Fittings",
-  "Fasteners", "Olets", "Gaskets", "Valves", "Round Bar",
-  "Sheet, Plate & Coils", "Ferrule Fittings", "Spools", "PPR Pipes & Fittings"  
+  { name: "Pipes & Tubes", path: "/pipes-tubes" },
+  { name: "Buttweld Fittings", path: "/buttweld-fittings" },
+  { name: "Flanges", path: "/flanges" },
+  { name: "Forged Fittings", path: "/forged-fittings" },
+  { name: "Fasteners", path: "/fasteners" },
+  { name: "Olets", path: "/olets" },
+  { name: "Valves", path: "/valves" },
+  { name: "Round Bar", path: "/round-bar" },
+  { name: "Sheet, Plate & Coils", path: "/sheet-plate-coils" },
+  { name: "Ferrule Fittings", path: "/ferrule-fittings" },
+  { name: "Spools", path: "/spools" },
+  { name: "Gaskets", path: "/coating" }
 ];
 
 const languagesList = [
@@ -21,8 +30,13 @@ const languagesList = [
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const [isDropdownHovered, setIsDropdownHovered] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
+
+  const filteredProducts = productsList.filter(product => 
+    product.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   useEffect(() => {
     // Add Google Translate script dynamically
@@ -106,13 +120,14 @@ const Navbar = () => {
                   className="absolute top-[calc(100%+4px)] left-0 bg-white/95 backdrop-blur-xl border border-gray-200 rounded-md min-w-[200px] py-1.5 shadow-[0_20px_60px_rgba(0,0,0,0.1)]"
                 >
                   {productsList.map((item) => (
-                    <a 
-                      key={item} 
-                      href="#products" 
+                    <Link 
+                      key={item.name} 
+                      to={item.path} 
+                      onClick={() => setIsDropdownHovered(false)}
                       className="block px-4 py-2 text-[0.8rem] tracking-wide text-gray-700 hover:bg-gray-100 hover:text-[#1456a8] transition-colors"
                     >
-                      {item}
-                    </a>
+                      {item.name}
+                    </Link>
                   ))}
                 </motion.div>
               )}
@@ -205,20 +220,52 @@ const Navbar = () => {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 20, opacity: 0 }}
               transition={{ delay: 0.1 }}
-              className="w-full max-w-[640px] border-b-2 border-accent flex items-center gap-4 pb-4"
+              className="w-full max-w-[640px] flex flex-col gap-6"
             >
-              <input 
-                type="text" 
-                placeholder="Search products..." 
-                autoFocus
-                className="flex-1 bg-transparent border-none outline-none font-bebas text-4xl lg:text-5xl tracking-wide text-white placeholder-white/30"
-              />
-              <button 
-                onClick={() => setIsSearchOpen(false)}
-                className="bg-transparent border-none text-silver cursor-pointer text-2xl hover:text-white transition-colors"
-              >
-                <X />
-              </button>
+              <div className="border-b-2 border-accent flex items-center gap-4 pb-4">
+                <input 
+                  type="text" 
+                  placeholder="Search products..." 
+                  autoFocus
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="flex-1 bg-transparent border-none outline-none font-bebas text-4xl lg:text-5xl tracking-wide text-white placeholder-white/30"
+                />
+                <button 
+                  onClick={() => {
+                    setIsSearchOpen(false);
+                    setSearchQuery('');
+                  }}
+                  className="bg-transparent border-none text-silver cursor-pointer text-2xl hover:text-white transition-colors"
+                >
+                  <X />
+                </button>
+              </div>
+              
+              {searchQuery && (
+                <div className="bg-white/10 backdrop-blur-md rounded-lg p-4 max-h-[300px] overflow-y-auto">
+                  {filteredProducts.length > 0 ? (
+                    <ul className="flex flex-col gap-2 list-none p-0 m-0">
+                      {filteredProducts.map((product) => (
+                        <li key={product.name}>
+                          <Link 
+                            to={product.path}
+                            onClick={() => {
+                              setIsSearchOpen(false);
+                              setSearchQuery('');
+                            }}
+                            className="block text-white hover:text-accent text-lg transition-colors py-2 border-b border-white/5 last:border-0"
+                          >
+                            {product.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-silver text-center py-4">No products found for "{searchQuery}"</p>
+                  )}
+                </div>
+              )}
             </motion.div>
           </motion.div>
         )}
