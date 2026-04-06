@@ -44,8 +44,8 @@ export const productsData = [
   },
   {
     id: 7,
-    title: "Coating",
-    desc: "Industry-grade anti-corrosive coatings, including 3LPE, FBE, and more to enhance durability and pipeline lifecycle.",
+    title: "Gaskets",
+    desc: "Industry-grade anti-corrosive Gaskets, including 3LPE, FBE, and more to enhance durability and pipeline lifecycle.",
     img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80",
     link: "/coating"
   },
