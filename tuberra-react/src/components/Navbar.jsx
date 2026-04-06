@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, X, ChevronDown, Download, Globe } from 'lucide-react';
+import { Search, X, ChevronDown, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const productsList = [
@@ -27,12 +27,43 @@ const languagesList = [
   { code: 'ar', name: 'Arabic' }
 ];
 
+const languageFlags = {
+  en: new URL('../assets/flags/us.svg', import.meta.url).href,
+  it: new URL('../assets/flags/it.svg', import.meta.url).href,
+  es: new URL('../assets/flags/es.svg', import.meta.url).href,
+  de: new URL('../assets/flags/de.svg', import.meta.url).href,
+  id: new URL('../assets/flags/id.svg', import.meta.url).href,
+  ar: new URL('../assets/flags/sa.svg', import.meta.url).href
+};
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [isDropdownHovered, setIsDropdownHovered] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState(() => {
+    if (typeof window === 'undefined') return 'en';
+
+    const translateCookie = document.cookie
+      .split('; ')
+      .find((item) => item.startsWith('googtrans='));
+
+    if (translateCookie) {
+      const value = translateCookie.split('=')[1];
+      const langCode = value.split('/').pop();
+      if (languagesList.some((lang) => lang.code === langCode)) {
+        return langCode;
+      }
+    }
+
+    const storedLang = window.localStorage.getItem('selectedLanguage');
+    if (storedLang && languagesList.some((lang) => lang.code === storedLang)) {
+      return storedLang;
+    }
+
+    return 'en';
+  });
 
   const filteredProducts = productsList.filter(product => 
     product.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -68,6 +99,8 @@ const Navbar = () => {
   }, []);
 
   const changeLanguage = (langCode) => {
+    setSelectedLanguage(langCode);
+    window.localStorage.setItem('selectedLanguage', langCode);
     setIsLangDropdownOpen(false);
     
     // Find the hidden Google Translate dropdown and trigger a change event
@@ -82,6 +115,8 @@ const Navbar = () => {
       window.location.reload();
     }
   };
+
+  const currentLanguage = languagesList.find((lang) => lang.code === selectedLanguage) ?? languagesList[0];
 
   return (
     <>
@@ -170,9 +205,16 @@ const Navbar = () => {
           <div className="relative">
             <button
               onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-              className="bg-transparent border-none cursor-pointer text-gray-700 p-1 transition-colors hover:text-[#1456a8] flex items-center justify-center rounded-full mt-1 outline-none"
+              className="bg-transparent border-none cursor-pointer text-gray-700 px-3 py-2 transition-colors hover:text-[#1456a8] flex items-center gap-2 rounded-full mt-1 outline-none"
             >
-              <Globe size={18} />
+              <img
+                src={languageFlags[currentLanguage.code]}
+                alt={`${currentLanguage.name} flag`}
+                className="h-4 w-5 rounded-sm object-cover"
+              />
+              <span className="text-sm font-semibold tracking-wide text-gray-800">
+                {currentLanguage.name}
+              </span>
             </button>
             
             <AnimatePresence>
@@ -188,8 +230,13 @@ const Navbar = () => {
                     <button
                       key={lang.code}
                       onClick={() => changeLanguage(lang.code)}
-                      className="w-full text-left bg-transparent border-none px-4 py-2 text-[0.85rem] font-semibold tracking-wide text-gray-700 hover:bg-gray-50 hover:text-[#1456a8] transition-colors cursor-pointer outline-none"
+                      className="w-full text-left bg-transparent border-none px-4 py-2 text-[0.85rem] font-semibold tracking-wide text-gray-700 hover:bg-gray-50 hover:text-[#1456a8] transition-colors cursor-pointer outline-none flex items-center gap-2"
                     >
+                      <img
+                        src={languageFlags[lang.code]}
+                        alt={`${lang.name} flag`}
+                        className="h-4 w-5 rounded-sm object-cover"
+                      />
                       {lang.name}
                     </button>
                   ))}
