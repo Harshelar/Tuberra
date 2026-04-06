@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30">
+  <rect width="60" height="30" fill="#b22234"/>
+  <g fill="#fff">
+    <rect y="3" width="60" height="3"/>
+    <rect y="9" width="60" height="3"/>
+    <rect y="15" width="60" height="3"/>
+    <rect y="21" width="60" height="3"/>
+    <rect y="27" width="60" height="3"/>
+  </g>
+  <rect width="26" height="14" fill="#3c3b6e"/>
+  <g fill="#fff">
+    <g id="s" transform="translate(3,3)">
+      <g>
+        <path d="M2,0.5 L2.6,1.8 L4,1.8 L2.8,2.7 L3.4,4 L2,3.1 L0.6,4 L1.2,2.7 L0,1.8 L1.4,1.8 Z"/>
+      </g>
+    </g>
+    <use href="#s" x="6"/>
+    <use href="#s" x="12"/>
+    <use href="#s" x="18"/>
+    <use href="#s" x="24"/>
+    <use href="#s" x="0" y="4"/>
+    <use href="#s" x="6" y="4"/>
+    <use href="#s" x="12" y="4"/>
+    <use href="#s" x="18" y="4"/>
+    <use href="#s" x="24" y="4"/>
+  </g>
+</svg>
